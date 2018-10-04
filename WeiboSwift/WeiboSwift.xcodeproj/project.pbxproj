@@ -13,6 +13,7 @@
 		0655909F216661B00048FBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0655909E216661B00048FBD5 /* Assets.xcassets */; };
 		065590AD216661B00048FBD5 /* WeiboSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065590AC216661B00048FBD5 /* WeiboSwiftTests.swift */; };
 		065590B8216661B00048FBD5 /* WeiboSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065590B7216661B00048FBD5 /* WeiboSwiftUITests.swift */; };
+		065590CA21666F0A0048FBD5 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 065590C921666F090048FBD5 /* Classes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		065590B3216661B00048FBD5 /* WeiboSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		065590B7216661B00048FBD5 /* WeiboSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboSwiftUITests.swift; sourceTree = "<group>"; };
 		065590B9216661B00048FBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		065590C921666F090048FBD5 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		06559096216661AD0048FBD5 /* WeiboSwift */ = {
 			isa = PBXGroup;
 			children = (
+				065590C921666F090048FBD5 /* Classes */,
 				06559097216661AE0048FBD5 /* AppDelegate.swift */,
 				06559099216661AE0048FBD5 /* ViewController.swift */,
 				0655909B216661AE0048FBD5 /* Main.storyboard */,
@@ -227,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065590CA21666F0A0048FBD5 /* Classes in Resources */,
 				0655909F216661B00048FBD5 /* Assets.xcassets in Resources */,
 				0655909D216661AE0048FBD5 /* Main.storyboard in Resources */,
 			);
