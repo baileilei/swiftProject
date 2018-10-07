@@ -17,8 +17,8 @@ class YYVistorTableViewController: UITableViewController {
         if isLogin{
             super.loadView()
         }else{
-            let vistorView = UIView()
-            vistorView.backgroundColor = UIColor.brown
+            let vistorView = YYVistorView()
+            
             view = vistorView;
             setupnavUI()
         }
