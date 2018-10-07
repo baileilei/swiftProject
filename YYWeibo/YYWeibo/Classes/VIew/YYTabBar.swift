@@ -10,8 +10,12 @@ import UIKit
 
 class YYTabBar: UITabBar {
     
+    var composeBtnClosure : (()->())?//参数 返回值
     private lazy var composeBUtton: UIButton = {
         let button = UIButton()
+        
+        button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
+        
         button.setImage(UIImage(named: "tabbar_compose_icon_add"), for: .normal)
         button.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .highlighted)
         
@@ -62,6 +66,11 @@ class YYTabBar: UITabBar {
                 }
             }
         }
+    }
+    
+    @objc func buttonClick() {
+        print("yy-block")
+        composeBtnClosure?()
     }
     
 

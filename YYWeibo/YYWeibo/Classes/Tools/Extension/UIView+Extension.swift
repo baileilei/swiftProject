@@ -9,7 +9,11 @@
 import UIKit
 
 extension UIView{
+    //分类的作用：此处从frame这个属性 转变为 x这个属性。   因为更常用，所以更加直接！！！
+    //以往访问view的x属性需要frame.origin.x, 现在可以直接访问x了。   实质还是一样的！！别无二致！！计算属性！！
     
+    //拓展思考：继承，子类会继承父类的属性，如果子类重写了父类的属性会怎样？ 子类为主。 继承也就是有而已！！！
+    //model呢？
     var x : CGFloat {
         get{ return frame.origin.x}
         set{frame.origin.x = newValue}
@@ -49,13 +53,4 @@ extension UIView{
         get {return frame.size}
         set {frame.size = newValue}
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

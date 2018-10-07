@@ -17,6 +17,10 @@ class YYTabBarViewController: UITabBarController {
         
         //如何对只读属性赋值  KVC------如果系统的属性是只读的，那你还能给这个属性赋值么？如果能，什么方法？？？
         let tabbar = YYTabBar()
+        tabbar.composeBtnClosure = {[weak self]  in
+            print("闭包过来的")
+            
+        }
         setValue(tabbar, forKey: "tabBar")
         
         
