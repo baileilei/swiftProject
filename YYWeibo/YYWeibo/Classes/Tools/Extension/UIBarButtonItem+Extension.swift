@@ -30,7 +30,7 @@ extension UIBarButtonItem{
     @objc func test() ->  Void{
     }
     
-    convenience init(title: String,target:Any, imageName:String,action: Selector) {
+    convenience init(title: String,target:Any, imageName:String? = nil,action: Selector) {
         self.init()
         
         let button = UIButton()
@@ -42,7 +42,9 @@ extension UIBarButtonItem{
         button.setTitleColor(UIColor.orange, for: .highlighted)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         
-        button.setImage(UIImage(named: imageName), for: .normal)
+        if imageName != nil {
+            button.setImage(UIImage(named:imageName!), for: .normal)
+        }
         
         button.sizeToFit()
         

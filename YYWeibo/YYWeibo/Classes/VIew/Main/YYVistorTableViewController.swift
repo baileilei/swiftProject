@@ -20,16 +20,24 @@ class YYVistorTableViewController: UITableViewController {
             let vistorView = UIView()
             vistorView.backgroundColor = UIColor.brown
             view = vistorView;
-            
+            setupnavUI()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+    }
+    
+    private func setupnavUI(){
         
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录", target: self, action: #selector(loginAction))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+        
+    }
+    
+   @objc  func loginAction() {
+        print("点击了登录")
     }
 
 }

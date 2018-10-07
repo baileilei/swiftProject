@@ -12,18 +12,7 @@ class YYHomeViewController: YYVistorTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupnavUI()
     }
 
-    private func setupnavUI(){
-        
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
-        
-    }
-    
-
-  
 
 }
