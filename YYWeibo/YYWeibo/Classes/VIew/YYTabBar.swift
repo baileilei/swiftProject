@@ -37,7 +37,32 @@ class YYTabBar: UITabBar {
     }
     
     
-    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        composeBUtton.center.x = frame.size.width/2
+        composeBUtton.center.y = frame.size.height/2
+//        composeBUtton.center = center//无效！！ 为啥？
+        
+        //如何在for循环中添加遍历次数的索引？？？
+        var index = 0
+        
+        let itemWidth = frame.size.width / 5;
+        for value in subviews{//UITabBarButton是一个系统私有类，不能直接使用
+            if value .isKind(of:NSClassFromString("UITabBarButton")! ){
+//                print(value)
+                value.frame.size.width = itemWidth
+                
+                //设置系统按钮的x坐标
+                value.frame.origin.x = itemWidth * CGFloat(index)
+                index += 1
+                
+                if index == 2{
+                    index += 1
+                }
+            }
+        }
+    }
     
 
 }
