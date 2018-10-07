@@ -22,7 +22,7 @@
 import UIKit
 
 extension UIBarButtonItem{
-    //接口如何维护？？？
+    //接口如何维护？？？  如何设计！！！？？？
     convenience init(title: String) {
         
         self.init(title: title, target: AnyObject.self, imageName: "", action:#selector(test) );

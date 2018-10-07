@@ -24,6 +24,7 @@
 		063A5E772169CE1F00A4F86F /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */; };
 		063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E792169CFC600A4F86F /* YYSearchView.swift */; };
 		063A5E7C2169D01800A4F86F /* YYSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E7B2169D01800A4F86F /* YYSearchView.xib */; };
+		063A5E7E216A10DA00A4F86F /* YYVistorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E7D216A10DA00A4F86F /* YYVistorTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		063A5E792169CFC600A4F86F /* YYSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSearchView.swift; sourceTree = "<group>"; };
 		063A5E7B2169D01800A4F86F /* YYSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYSearchView.xib; sourceTree = "<group>"; };
+		063A5E7D216A10DA00A4F86F /* YYVistorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYVistorTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				063A5E672166E9A900A4F86F /* YYTabBarViewController.swift */,
+				063A5E7D216A10DA00A4F86F /* YYVistorTableViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				063A5E682166E9A900A4F86F /* YYTabBarViewController.swift in Sources */,
 				063A5E772169CE1F00A4F86F /* UIBarButtonItem+Extension.swift in Sources */,
 				063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */,
+				063A5E7E216A10DA00A4F86F /* YYVistorTableViewController.swift in Sources */,
 				063A5E752169964A00A4F86F /* UIView+Extension.swift in Sources */,
 				063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */,
 				063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */,

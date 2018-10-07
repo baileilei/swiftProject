@@ -8,13 +8,11 @@
 
 import UIKit
 
-class YYHomeViewController: UIViewController {
+class YYHomeViewController: YYVistorTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupnavUI()
-        
-        view.backgroundColor = UIColor.orange
     }
 
     private func setupnavUI(){

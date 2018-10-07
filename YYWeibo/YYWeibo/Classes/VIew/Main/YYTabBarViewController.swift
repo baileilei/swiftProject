@@ -4,7 +4,7 @@
 //
 //  Created by g on 2018/10/5.
 //  Copyright © 2018 g. All rights reserved.
-//
+//   未登录视图应该放在父类中，像无数据的背景图片也是应该这么设计。
 
 import UIKit
 
