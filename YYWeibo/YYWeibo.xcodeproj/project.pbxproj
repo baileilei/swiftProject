@@ -19,6 +19,7 @@
 		063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E6B2166E9D800A4F86F /* YYDiscoverViewController.swift */; };
 		063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E6D2166E9E300A4F86F /* YYMessageViewController.swift */; };
 		063A5E702166E9F000A4F86F /* YYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E6F2166E9F000A4F86F /* YYProfileViewController.swift */; };
+		063A5E7221698D0400A4F86F /* YYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E7121698D0400A4F86F /* YYTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		063A5E6B2166E9D800A4F86F /* YYDiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYDiscoverViewController.swift; sourceTree = "<group>"; };
 		063A5E6D2166E9E300A4F86F /* YYMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYMessageViewController.swift; sourceTree = "<group>"; };
 		063A5E6F2166E9F000A4F86F /* YYProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYProfileViewController.swift; sourceTree = "<group>"; };
+		063A5E7121698D0400A4F86F /* YYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				063A5E642166E97D00A4F86F /* Message */,
 				063A5E652166E97D00A4F86F /* Profile */,
 				063A5E662166E97D00A4F86F /* Main */,
+				063A5E7121698D0400A4F86F /* YYTabBar.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				063A5E702166E9F000A4F86F /* YYProfileViewController.swift in Sources */,
 				063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */,
 				063A5E6A2166E9CA00A4F86F /* YYHomeViewController.swift in Sources */,
+				063A5E7221698D0400A4F86F /* YYTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

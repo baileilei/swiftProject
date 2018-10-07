@@ -15,6 +15,11 @@ class YYTabBarViewController: UITabBarController {
 //统一设置tabbar中的颜色
 //        UITabBar.appearance().tintColor = UIColor.orange
         
+        //如何对只读属性赋值  KVC------如果系统的属性是只读的，那你还能给这个属性赋值么？如果能，什么方法？？？
+        let tabbar = YYTabBar()
+        setValue(tabbar, forKey: "tabBar")
+        
+        
         addChildViewController(childController: YYHomeViewController(), title: "首页", imageName: "tabbar_home")
         addChildViewController(childController: YYDiscoverViewController(), title: "发现", imageName: "tabbar_discover")
         addChildViewController(childController: YYMessageViewController(), title: "消息", imageName: "tabbar_message_center")
