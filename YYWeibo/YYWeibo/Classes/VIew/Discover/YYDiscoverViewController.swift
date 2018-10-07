@@ -13,8 +13,10 @@ class YYDiscoverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录")
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+        
+        navigationItem.titleView = YYSearchView.searchView()
     }
 
    

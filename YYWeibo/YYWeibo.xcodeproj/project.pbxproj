@@ -22,6 +22,8 @@
 		063A5E7221698D0400A4F86F /* YYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E7121698D0400A4F86F /* YYTabBar.swift */; };
 		063A5E752169964A00A4F86F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E742169964A00A4F86F /* UIView+Extension.swift */; };
 		063A5E772169CE1F00A4F86F /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */; };
+		063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E792169CFC600A4F86F /* YYSearchView.swift */; };
+		063A5E7C2169D01800A4F86F /* YYSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E7B2169D01800A4F86F /* YYSearchView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		063A5E7121698D0400A4F86F /* YYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTabBar.swift; sourceTree = "<group>"; };
 		063A5E742169964A00A4F86F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		063A5E792169CFC600A4F86F /* YYSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSearchView.swift; sourceTree = "<group>"; };
+		063A5E7B2169D01800A4F86F /* YYSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYSearchView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,7 @@
 		063A5E632166E97D00A4F86F /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				063A5E782169CF9C00A4F86F /* View */,
 				063A5E6B2166E9D800A4F86F /* YYDiscoverViewController.swift */,
 			);
 			path = Discover;
@@ -235,6 +240,15 @@
 				063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		063A5E782169CF9C00A4F86F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				063A5E792169CFC600A4F86F /* YYSearchView.swift */,
+				063A5E7B2169D01800A4F86F /* YYSearchView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063A5E7C2169D01800A4F86F /* YYSearchView.xib in Resources */,
 				063A5E382166E81C00A4F86F /* LaunchScreen.storyboard in Resources */,
 				063A5E352166E81C00A4F86F /* Assets.xcassets in Resources */,
 				063A5E332166E81B00A4F86F /* Main.storyboard in Resources */,
@@ -374,6 +389,7 @@
 				063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */,
 				063A5E752169964A00A4F86F /* UIView+Extension.swift in Sources */,
 				063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */,
+				063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */,
 				063A5E702166E9F000A4F86F /* YYProfileViewController.swift in Sources */,
 				063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */,
 				063A5E6A2166E9CA00A4F86F /* YYHomeViewController.swift in Sources */,
