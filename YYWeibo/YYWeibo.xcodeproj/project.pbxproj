@@ -20,6 +20,7 @@
 		063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E6D2166E9E300A4F86F /* YYMessageViewController.swift */; };
 		063A5E702166E9F000A4F86F /* YYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E6F2166E9F000A4F86F /* YYProfileViewController.swift */; };
 		063A5E7221698D0400A4F86F /* YYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E7121698D0400A4F86F /* YYTabBar.swift */; };
+		063A5E752169964A00A4F86F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E742169964A00A4F86F /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		063A5E6D2166E9E300A4F86F /* YYMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYMessageViewController.swift; sourceTree = "<group>"; };
 		063A5E6F2166E9F000A4F86F /* YYProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYProfileViewController.swift; sourceTree = "<group>"; };
 		063A5E7121698D0400A4F86F /* YYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTabBar.swift; sourceTree = "<group>"; };
+		063A5E742169964A00A4F86F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		063A5E5F2166E97D00A4F86F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				063A5E73216995F300A4F86F /* Extension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -221,6 +224,14 @@
 				063A5E672166E9A900A4F86F /* YYTabBarViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		063A5E73216995F300A4F86F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				063A5E742169964A00A4F86F /* UIView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +368,7 @@
 				063A5E302166E81B00A4F86F /* ViewController.swift in Sources */,
 				063A5E682166E9A900A4F86F /* YYTabBarViewController.swift in Sources */,
 				063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */,
+				063A5E752169964A00A4F86F /* UIView+Extension.swift in Sources */,
 				063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */,
 				063A5E702166E9F000A4F86F /* YYProfileViewController.swift in Sources */,
 				063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */,
