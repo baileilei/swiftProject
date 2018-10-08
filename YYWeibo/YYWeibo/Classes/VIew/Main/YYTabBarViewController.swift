@@ -12,15 +12,7 @@ class YYTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
 
-        view.backgroundColor = UIColor.purple
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-=======
 //统一设置tabbar中的颜色
 //        UITabBar.appearance().tintColor = UIColor.orange
         
@@ -38,8 +30,6 @@ class YYTabBarViewController: UITabBarController {
         addChildViewController(childController: YYMessageViewController(), title: "消息", imageName: "tabbar_message_center")
         addChildViewController(childController: YYProfileViewController(), title: "我的", imageName: "tabbar_profile")
     
-    
->>>>>>> c599edc8662251417b22ef96683df6a13d219c3c
     }
     
 
