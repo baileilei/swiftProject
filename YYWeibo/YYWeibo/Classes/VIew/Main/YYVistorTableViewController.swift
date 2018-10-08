@@ -12,12 +12,15 @@ class YYVistorTableViewController: UITableViewController {
 
     var isLogin : Bool = false
     
+    var vistorView :YYVistorView?
+    
+    
     //自定义view视图------面试题：如何自定义控制器的view？
     override func loadView() {
         if isLogin{
             super.loadView()
         }else{
-            let vistorView = YYVistorView()
+            vistorView = YYVistorView()
             
             view = vistorView;
             setupnavUI()

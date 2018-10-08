@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YYDiscoverViewController: UIViewController {
+class YYDiscoverViewController: YYVistorTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,13 @@ class YYDiscoverViewController: UIViewController {
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录")
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
         
-        navigationItem.titleView = YYSearchView.searchView()
+        
+        if isLogin {
+            navigationItem.titleView = YYSearchView.searchView()
+            
+        }else{
+            vistorView?.updateVisitorInfo(message: "登录后，最新、最热微博尽在掌握，不再会与实事潮流擦肩而过", imageName: "visitordiscover_image_message")
+        }
     }
 
    

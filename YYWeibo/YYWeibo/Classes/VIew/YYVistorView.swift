@@ -105,4 +105,24 @@ class YYVistorView: UIView {
         }
         
     }
+    
+    func updateVisitorInfo(message:String?, imageName:String?) {
+        if let msg = message, let imgName = imageName {
+            messageLabel.text = msg
+            iconImageView.image = UIImage(named: imgName)
+            cycleImageView.isHidden = true
+        }else{
+            startAnimation()
+        }
+    }
+    
+    func startAnimation() -> Void {
+        let animation = CABasicAnimation(keyPath: "transform.rotation")
+        animation.toValue = 2 * M_PI
+        animation.repeatCount = 10000.0
+        animation.duration = 20
+        animation.isRemovedOnCompletion = false
+        cycleImageView.layer.add(animation, forKey: nil)//图层上的动画
+        
+    }
 }

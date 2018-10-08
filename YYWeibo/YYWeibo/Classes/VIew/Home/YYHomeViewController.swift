@@ -12,6 +12,13 @@ class YYHomeViewController: YYVistorTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if isLogin {
+            
+        }else{
+            vistorView?.updateVisitorInfo(message: nil, imageName: nil)
+        }
+        
     }
 
 

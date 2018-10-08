@@ -8,13 +8,20 @@
 
 import UIKit
 
-class YYProfileViewController: UIViewController {
+class YYProfileViewController: YYVistorTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录")
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+        
+        if isLogin {
+        
+        } else {
+            vistorView?.updateVisitorInfo(message: "登录后，你的微博、相册、个人资料会显示在这里，展示给别人", imageName: "visitordiscover_image_profile")
+        }
+
     }
 
   
