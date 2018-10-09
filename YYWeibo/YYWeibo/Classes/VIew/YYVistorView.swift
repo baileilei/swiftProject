@@ -10,6 +10,9 @@ import UIKit
 
 class YYVistorView: UIView {
     
+    var loginClosure: (()->())?
+    
+    
     private lazy var cycleImageView : UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
     
     private lazy var maskImageView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
@@ -36,6 +39,7 @@ class YYVistorView: UIView {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         button.setBackgroundImage(UIImage(named: "common_button_white_disable"), for: .normal)
         button.adjustsImageWhenHighlighted = false//去掉点击的背景高亮效果
+        button.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
         return button
     }()
     
@@ -48,6 +52,7 @@ class YYVistorView: UIView {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         button.setBackgroundImage(UIImage(named: "common_button_white_disable"), for: .normal)
         button.adjustsImageWhenHighlighted = false//去掉点击的背景高亮效果
+        button.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
         return button
     }()
     
@@ -94,7 +99,7 @@ class YYVistorView: UIView {
         
         loginButton.snp_makeConstraints { (make) in
             make.left.equalTo(cycleImageView)
-            make.top.equalTo(messageLabel.snp_bottom)
+            make.top.equalTo(messageLabel.snp_bottom).offset(10)
             make.size.equalTo(CGSize(width: 80, height: 35))
         }
         
@@ -118,11 +123,15 @@ class YYVistorView: UIView {
     
     func startAnimation() -> Void {
         let animation = CABasicAnimation(keyPath: "transform.rotation")
-        animation.toValue = 2 * M_PI
+        animation.toValue = 2 * Double.pi
         animation.repeatCount = 10000.0
         animation.duration = 20
         animation.isRemovedOnCompletion = false
         cycleImageView.layer.add(animation, forKey: nil)//图层上的动画
         
+    }
+    
+    @objc func loginAction(){
+        loginClosure?()
     }
 }

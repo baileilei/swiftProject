@@ -1,0 +1,13 @@
+Git Exclude
+Git Patch
+git reset  git revert
+在git push前如何遗弃掉历史commit-----------------------------------------practice
+git 如何删除中间某个commit同时保留后面的commit
+Git撤销&回滚操作
+
+
+
+
+
+TODO:
+1.pod SVProgessHUD    AFNetworking

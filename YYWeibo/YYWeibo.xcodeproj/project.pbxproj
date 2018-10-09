@@ -38,6 +38,8 @@
 		063A5E99216A21B400A4F86F /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E8D216A21B400A4F86F /* Constraint.swift */; };
 		063A5E9A216A21B400A4F86F /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E8E216A21B400A4F86F /* Debugging.swift */; };
 		063A5E9B216A21B400A4F86F /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E8F216A21B400A4F86F /* LayoutConstraint.swift */; };
+		FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD2753C3216C5C9600C160D0 /* TaskBackup.txt */; };
+		FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2753C6216C874600C160D0 /* YYOauthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,9 @@
 		063A5E8D216A21B400A4F86F /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		063A5E8E216A21B400A4F86F /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
 		063A5E8F216A21B400A4F86F /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		FD2753C2216C5C6E00C160D0 /* NotificationPayloadTest.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadTest.apns; sourceTree = "<group>"; };
+		FD2753C3216C5C9600C160D0 /* TaskBackup.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TaskBackup.txt; sourceTree = "<group>"; };
+		FD2753C6216C874600C160D0 /* YYOauthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYOauthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +154,8 @@
 				063A5E5D2166E97D00A4F86F /* Classes */,
 				063A5E2D2166E81B00A4F86F /* AppDelegate.swift */,
 				063A5E2F2166E81B00A4F86F /* ViewController.swift */,
+				FD2753C2216C5C6E00C160D0 /* NotificationPayloadTest.apns */,
+				FD2753C3216C5C9600C160D0 /* TaskBackup.txt */,
 				063A5E312166E81B00A4F86F /* Main.storyboard */,
 				063A5E342166E81C00A4F86F /* Assets.xcassets */,
 				063A5E362166E81C00A4F86F /* LaunchScreen.storyboard */,
@@ -212,6 +219,7 @@
 		063A5E612166E97D00A4F86F /* VIew */ = {
 			isa = PBXGroup;
 			children = (
+				FD2753C5216C870F00C160D0 /* OAuth */,
 				063A5E622166E97D00A4F86F /* Home */,
 				063A5E632166E97D00A4F86F /* Discover */,
 				063A5E642166E97D00A4F86F /* Message */,
@@ -309,6 +317,14 @@
 				063A5E8F216A21B400A4F86F /* LayoutConstraint.swift */,
 			);
 			path = "SnapKit修改版";
+			sourceTree = "<group>";
+		};
+		FD2753C5216C870F00C160D0 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FD2753C6216C874600C160D0 /* YYOauthViewController.swift */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +433,7 @@
 			files = (
 				063A5E7C2169D01800A4F86F /* YYSearchView.xib in Resources */,
 				063A5E382166E81C00A4F86F /* LaunchScreen.storyboard in Resources */,
+				FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */,
 				063A5E352166E81C00A4F86F /* Assets.xcassets in Resources */,
 				063A5E332166E81B00A4F86F /* Main.storyboard in Resources */,
 			);
@@ -463,6 +480,7 @@
 				063A5E98216A21B400A4F86F /* ConstraintItem.swift in Sources */,
 				063A5E702166E9F000A4F86F /* YYProfileViewController.swift in Sources */,
 				063A5E91216A21B400A4F86F /* View+SnapKit.swift in Sources */,
+				FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */,
 				063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */,
 				063A5E6A2166E9CA00A4F86F /* YYHomeViewController.swift in Sources */,
 				063A5E7221698D0400A4F86F /* YYTabBar.swift in Sources */,

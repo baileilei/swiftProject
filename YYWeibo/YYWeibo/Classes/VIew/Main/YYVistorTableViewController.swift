@@ -21,7 +21,9 @@ class YYVistorTableViewController: UITableViewController {
             super.loadView()
         }else{
             vistorView = YYVistorView()
-            
+            vistorView?.loginClosure = {[weak self] in
+                self?.requestLoginOperation()
+            }
             view = vistorView;
             setupnavUI()
         }
@@ -41,6 +43,13 @@ class YYVistorTableViewController: UITableViewController {
     
    @objc  func loginAction() {
         print("点击了登录")
+    vistorView?.loginClosure!()
+    }
+    
+    private func requestLoginOperation(){
+        let OauthVC = YYOauthViewController()
+        self.present(UINavigationController(rootViewController: OauthVC), animated: false, completion: nil)
+        
     }
 
 }
