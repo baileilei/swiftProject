@@ -57,7 +57,9 @@ class YYOauthViewController: UIViewController {
     
     func requestAccessToken(code:String){
         print(code)
-        
+        YYNetworkTools.shareTools.requestAccessToken(code: code) { (response, error) in
+            print(response)
+        }
     }
 
 }
