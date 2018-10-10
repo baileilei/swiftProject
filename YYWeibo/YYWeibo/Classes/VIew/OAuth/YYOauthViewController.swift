@@ -57,6 +57,7 @@ class YYOauthViewController: UIViewController {
     
     func requestAccessToken(code:String){
         print(code)
+        
     }
 
 }
@@ -86,7 +87,7 @@ extension YYOauthViewController: UIWebViewDelegate{
         
         if let query = url.query, query.hasPrefix("code=") {
             let code = query.substring(from: "code=".endIndex)
-            
+            requestAccessToken(code: code)
         }
         
         

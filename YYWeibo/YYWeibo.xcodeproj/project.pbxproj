@@ -38,6 +38,7 @@
 		063A5E99216A21B400A4F86F /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E8D216A21B400A4F86F /* Constraint.swift */; };
 		063A5E9A216A21B400A4F86F /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E8E216A21B400A4F86F /* Debugging.swift */; };
 		063A5E9B216A21B400A4F86F /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E8F216A21B400A4F86F /* LayoutConstraint.swift */; };
+		063A5E9D216CDD3500A4F86F /* YYNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E9C216CDD3500A4F86F /* YYNetworkTools.swift */; };
 		FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD2753C3216C5C9600C160D0 /* TaskBackup.txt */; };
 		FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2753C6216C874600C160D0 /* YYOauthViewController.swift */; };
 /* End PBXBuildFile section */
@@ -98,6 +99,7 @@
 		063A5E8D216A21B400A4F86F /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		063A5E8E216A21B400A4F86F /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
 		063A5E8F216A21B400A4F86F /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		063A5E9C216CDD3500A4F86F /* YYNetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYNetworkTools.swift; sourceTree = "<group>"; };
 		FD2753C2216C5C6E00C160D0 /* NotificationPayloadTest.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadTest.apns; sourceTree = "<group>"; };
 		FD2753C3216C5C9600C160D0 /* TaskBackup.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TaskBackup.txt; sourceTree = "<group>"; };
 		FD2753C6216C874600C160D0 /* YYOauthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYOauthViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				063A5E81216A21AB00A4F86F /* ThirdLibs */,
 				063A5E73216995F300A4F86F /* Extension */,
+				063A5E9C216CDD3500A4F86F /* YYNetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */,
 				063A5E94216A21B400A4F86F /* SnapKit.swift in Sources */,
 				063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */,
+				063A5E9D216CDD3500A4F86F /* YYNetworkTools.swift in Sources */,
 				063A5E98216A21B400A4F86F /* ConstraintItem.swift in Sources */,
 				063A5E702166E9F000A4F86F /* YYProfileViewController.swift in Sources */,
 				063A5E91216A21B400A4F86F /* View+SnapKit.swift in Sources */,
