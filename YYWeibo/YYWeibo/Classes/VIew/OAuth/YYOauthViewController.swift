@@ -17,6 +17,7 @@ let weiBoRedirect_Uri = "http://www.baidu.com"
 
 
 import UIKit
+import SVProgressHUD
 
 class YYOauthViewController: UIViewController {
     
@@ -59,6 +60,33 @@ class YYOauthViewController: UIViewController {
         print(code)
         YYNetworkTools.shareTools.requestAccessToken(code: code) { (response, error) in
             print(response)
+            if error != nil{
+                SVProgressHUD.show(withStatus: "网络有问题")
+                return
+            }
+            
+            guard let dic = response as? [String:Any] else{
+                return
+            }
+            
+            let userAccount = YYUserAccount(dict: dic)
+            print(userAccount.access_token)
+            YYNetworkTools.shareTools.requestUserInfo(accessToken: userAccount.access_token!, uid: userAccount.uid, callBack: { (reponse, error) in
+                if error != nil{
+                    SVProgressHUD.show(withStatus: "wangluocuo")
+                    return
+                }
+                
+                guard let dic = response as? [String: Any] else{
+                    return
+                }
+                
+                print(dic)
+                
+                userAccount.name = dic["name"] as? String
+                userAccount.profile_image_url = dic["profile_image_url"] as? String
+                //归档 解档  对照项目看看   至少研究一天！！！、// 数据持久化。
+            })
         }
     }
 
