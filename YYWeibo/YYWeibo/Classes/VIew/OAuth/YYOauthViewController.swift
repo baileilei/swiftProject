@@ -86,7 +86,11 @@ extension YYOauthViewController: UIWebViewDelegate{
         if let query = url.query, query.hasPrefix("code=") {
             let code = query.substring(from: "code=".endIndex)
 //            requestAccessToken(code: code)
-            YYUserAccountVM.shareUserAccountVM.requestAccessToken(code: code)
+            YYUserAccountVM.shareUserAccountVM.requestAccessToken(code: code) { (isSuccess) in
+                if isSuccess{
+                    
+                }
+            }
         }
         
         
