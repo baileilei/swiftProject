@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYModel
 
 class YYHomeViewController: YYVistorTableViewController {
     
@@ -45,6 +46,8 @@ class YYHomeViewController: YYVistorTableViewController {
                 return
             }
             
+            let statusArr = NSArray.yy_modelArray(with: YYStatus.self, json: statusArray) as! [YYStatus]
+            self.statusList = statusArr
             
             
             self.tableView.reloadData()

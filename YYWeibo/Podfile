@@ -9,5 +9,5 @@ target 'YYWeibo' do
     pod 'SVProgressHUD', '1.1.3'
     pod 'AFNetworking'
     
-    pod 'YYModel'
+    pod 'YYModel','1.0.4'
 end
