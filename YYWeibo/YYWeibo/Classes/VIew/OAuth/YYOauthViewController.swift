@@ -86,9 +86,13 @@ class YYOauthViewController: UIViewController {
                 userAccount.name = dic["name"] as? String
                 userAccount.profile_image_url = dic["profile_image_url"] as? String
                 //归档 解档  对照项目看看   至少研究一天！！！、// 数据持久化。
+                
+                userAccount.saveUserAccount()//归档
             })
         }
     }
+    
+    
 
 }
 
