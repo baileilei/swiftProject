@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import SDWebImage
 
 class YYWelcomeViewController: UIViewController {
     
     private lazy var bgImageView: UIImageView = UIImageView(image: UIImage(named: "ad_background"))
+    
     private lazy var userImageView : UIImageView = {
         let view = UIImageView(image: UIImage(named: "avatar_default_big"))
+        
         view.layer.cornerRadius = view.size.width/2
         view.layer.masksToBounds = true
+//        view.size = CGSize(width: 85, height: 85)//留一个尾巴？？
+        if let imageUrl = YYUserAccount.loadUserAccount()?.profile_image_url{
+//            view.sd_setImage(with: imageUrl, placeholderImage: UIImage(named: "avatar_default_big"))
+            view.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "avatar_default_big"))
+        }
         
         return view
     }()
@@ -22,7 +30,11 @@ class YYWelcomeViewController: UIViewController {
     private var messagelabe: UILabel = {
         let label = UILabel()
         
-        label.text = "welcome back"
+        if let name = YYUserAccount.loadUserAccount()?.name{
+            label.text = "欢迎回来， \(name)"
+        }else{
+            label.text = "welcome back"
+        }
         label.font = UIFont.systemFont(ofSize: 13)
         label.textColor = UIColor.darkGray
         label.alpha = 0
@@ -46,6 +58,7 @@ class YYWelcomeViewController: UIViewController {
         userImageView.snp_makeConstraints { (make) in
             make.centerX.equalTo(view)
             make.top.equalTo(view).offset(200)
+            make.size.equalTo(CGSize(width: 85, height: 85))//这个才有效！！！
         }
         
         messagelabe.snp_makeConstraints { (make) in

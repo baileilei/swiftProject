@@ -24,7 +24,7 @@ class YYUserAccount: NSObject,NSCoding {
         expireDate = aDecoder.decodeObject(forKey: "expireDate") as? Date
         uid = aDecoder.decodeInt64(forKey: "uid")
         name = aDecoder.decodeObject(forKey: "name") as? String
-//        profile_image_url = aDecoder.decodeObject(forKey: "profile_image_url") as! String
+        profile_image_url = aDecoder.decodeObject(forKey: "profile_image_url") as! String
     }
     
     func saveUserAccount() -> Void {
