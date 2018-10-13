@@ -79,6 +79,8 @@
 		063A5F13216E2C6700A4F86F /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A5F02216E2C6700A4F86F /* UIButton+WebCache.m */; };
 		063A5F16216E2D9700A4F86F /* forBridgeFIle.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A5F15216E2D9700A4F86F /* forBridgeFIle.m */; };
 		063A5F19216E2DB500A4F86F /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A5F18216E2DB500A4F86F /* YYViewController.m */; };
+		063F7AEA217252650067A91B /* YYStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AE9217252650067A91B /* YYStatus.swift */; };
+		063F7AEC2172579C0067A91B /* YYUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AEB2172579C0067A91B /* YYUser.swift */; };
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
@@ -220,6 +222,8 @@
 		063A5F15216E2D9700A4F86F /* forBridgeFIle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = forBridgeFIle.m; sourceTree = "<group>"; };
 		063A5F17216E2DB500A4F86F /* YYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewController.h; sourceTree = "<group>"; };
 		063A5F18216E2DB500A4F86F /* YYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYViewController.m; sourceTree = "<group>"; };
+		063F7AE9217252650067A91B /* YYStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatus.swift; sourceTree = "<group>"; };
+		063F7AEB2172579C0067A91B /* YYUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUser.swift; sourceTree = "<group>"; };
 		06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccount.swift; sourceTree = "<group>"; };
 		06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccountVM.swift; sourceTree = "<group>"; };
 		6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -351,6 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */,
+				063F7AE9217252650067A91B /* YYStatus.swift */,
+				063F7AEB2172579C0067A91B /* YYUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -779,11 +785,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-YYWeibo/Pods-YYWeibo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -838,6 +846,7 @@
 				063A5F07216E2C6700A4F86F /* SDWebImageDecoder.m in Sources */,
 				063A5E90216A21B400A4F86F /* ViewController+SnapKit.swift in Sources */,
 				063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */,
+				063F7AEA217252650067A91B /* YYStatus.swift in Sources */,
 				063A5ED4216E2C5000A4F86F /* AFSecurityPolicy.m in Sources */,
 				063A5E94216A21B400A4F86F /* SnapKit.swift in Sources */,
 				063A5EDF216E2C6000A4F86F /* SVIndefiniteAnimatedView.m in Sources */,
@@ -852,6 +861,7 @@
 				063A5ED3216E2C5000A4F86F /* AFNetworkReachabilityManager.m in Sources */,
 				063A5F09216E2C6700A4F86F /* SDWebImageDownloader.m in Sources */,
 				063A5E91216A21B400A4F86F /* View+SnapKit.swift in Sources */,
+				063F7AEC2172579C0067A91B /* YYUser.swift in Sources */,
 				FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */,
 				06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */,
 				063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */,

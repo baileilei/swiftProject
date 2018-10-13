@@ -40,9 +40,24 @@ class YYNetworkTools: AFHTTPSessionManager {
     }
 }
 
-
+// MARK: --- Home 相关接口
 extension YYNetworkTools{
+    func requestStatuses(accessToken:String,callBack:@escaping(Any?,Error?)->()) -> Void {
+        let url = "https://api.weibo.com/2/statuses/friends_timeline.json"
+        let params = [
+            "access_token":accessToken
+        ]
+        
+        request(type: .GET, url: url, params: params, callBack:callBack)
+        
+        
+    }
     
+}
+
+
+// MARK: --- OAuth登录相关接口
+extension YYNetworkTools{
     //通过access_token 获取用户信息
     func requestUserInfo(accessToken:String, uid:Int64,callBacks:@escaping (Any?,Error?)->()) -> Void {
         let url = "https://api.weibo.com/2/users/show.json"
