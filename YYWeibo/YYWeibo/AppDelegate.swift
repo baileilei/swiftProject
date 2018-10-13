@@ -17,18 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let userAccount = YYUserAccount.loadUserAccount()
-        print(userAccount)
+//        let userAccount = YYUserAccount.loadUserAccount()
+//        print(userAccount)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(switchVC(note:)), name: NSNotification.Name(rawValue: switchRootVCNotification), object: nil)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        window?.rootViewController = YYWelcomeViewController()//YYTabBarViewController()
+        window?.rootViewController = YYTabBarViewController()
         
         window?.makeKeyAndVisible()
        
         
         return true
+    }
+    
+    @objc func switchVC(note:NSNotification) {
+        if (note.object != nil) {
+            window?.rootViewController = YYWelcomeViewController()
+        }else{
+            window?.rootViewController = YYTabBarViewController()
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

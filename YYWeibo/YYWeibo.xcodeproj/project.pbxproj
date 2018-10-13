@@ -82,6 +82,7 @@
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		06AB4FE821722A4800C7B631 /* YYWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE721722A4800C7B631 /* YYWelcomeViewController.swift */; };
+		06AB4FEA21723E1900C7B631 /* CommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE921723E1900C7B631 /* CommonTools.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
 		FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD2753C3216C5C9600C160D0 /* TaskBackup.txt */; };
 		FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2753C6216C874600C160D0 /* YYOauthViewController.swift */; };
@@ -224,6 +225,7 @@
 		06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccount.swift; sourceTree = "<group>"; };
 		06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccountVM.swift; sourceTree = "<group>"; };
 		06AB4FE721722A4800C7B631 /* YYWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYWelcomeViewController.swift; sourceTree = "<group>"; };
+		06AB4FE921723E1900C7B631 /* CommonTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTools.swift; sourceTree = "<group>"; };
 		6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8133F368868380103250E174 /* Pods_YYWeiboUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeiboUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02A1A1A790501DF470AED82 /* Pods_YYWeiboTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeiboTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -345,6 +347,7 @@
 				063A5E81216A21AB00A4F86F /* ThirdLibs */,
 				063A5E73216995F300A4F86F /* Extension */,
 				063A5E9C216CDD3500A4F86F /* YYNetworkTools.swift */,
+				06AB4FE921723E1900C7B631 /* CommonTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -848,6 +851,7 @@
 				063A5EC8216E2C5000A4F86F /* AFNetworkActivityIndicatorManager.m in Sources */,
 				06AB4FE821722A4800C7B631 /* YYWelcomeViewController.swift in Sources */,
 				063A5E97216A21B400A4F86F /* ConstraintRelation.swift in Sources */,
+				06AB4FEA21723E1900C7B631 /* CommonTools.swift in Sources */,
 				063A5ED1216E2C5000A4F86F /* AFURLSessionManager.m in Sources */,
 				063A5F07216E2C6700A4F86F /* SDWebImageDecoder.m in Sources */,
 				063A5E90216A21B400A4F86F /* ViewController+SnapKit.swift in Sources */,

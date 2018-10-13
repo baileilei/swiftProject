@@ -84,6 +84,10 @@ class YYWelcomeViewController: UIViewController {
         }) { (_) in
             UIView.animate(withDuration: 1, animations: {
                 self.messagelabe.alpha = 1
+            }, completion: { (_) in
+                //切换到首页  一个是present 了一个nav
+                
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: switchRootVCNotification), object: nil, userInfo: nil)
             })
         }
     }

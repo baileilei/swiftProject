@@ -89,6 +89,18 @@ extension YYOauthViewController: UIWebViewDelegate{
             YYUserAccountVM.shareUserAccountVM.requestAccessToken(code: code) { (isSuccess) in
                 if isSuccess{
                     print("获取到用户信息就代表登录成功")
+//                    self.present(YYWelcomeViewController(), animated: false, completion: {
+//                        self.dismiss(animated: false, completion: nil)
+//                    })
+                    
+                    //欢迎控制器必须用跟控制器来present！ 这也就是为什么必须用通知来处理了！！！
+                    //需求在于OAuth 和welcome先后出来，却要同时消失！！！所以必须用rootVC
+//                    self.dismiss(animated: false, completion: {
+//                        self.navigationController?.pushViewController(YYWelcomeViewController(), animated: false)
+//                    })
+                    self.dismiss(animated: false, completion: {
+                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: switchRootVCNotification), object: self, userInfo: nil)
+                    })
                 }
             }
         }
