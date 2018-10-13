@@ -56,80 +56,7 @@ class YYOauthViewController: UIViewController {
         webView.stringByEvaluatingJavaScript(from: "document.getElementById(userId).value = '15300230977';document.getElementById('passwd').value = '2012213576bss'")
     }
     
-    func requestAccessToken(code:String){
-        print(code)
-        YYNetworkTools.shareTools.requestAccessToken(code: code) { (response, error) in
-            print(response)
-            if error != nil{
-                SVProgressHUD.show(withStatus: "网络有问题")
-                return
-            }
-            
-            guard let dic = response as? [String:Any] else{
-                return
-            }
-            
-            let userAccount = YYUserAccount(dict: dic)
-            print(userAccount.access_token)
-            
-//            self.requestUserInfo(userAccount: userAccount)
-            //为什么不对？ block换个名称是否可行？
-            YYNetworkTools.shareTools.requestUserInfo(accessToken: userAccount.access_token!, uid: userAccount.uid, callBacks: { (reponse, error) in
-                if error != nil{
-                    SVProgressHUD.show(withStatus: "wangluocuo")
-                    return
-                }
-
-                guard let dic = response as? [String: Any] else{
-                    return
-                }
-
-                print(dic)
-
-                userAccount.name = dic["name"] as? String
-                userAccount.profile_image_url = dic["profile_image_url"] as? String
-                //归档 解档  对照项目看看   至少研究一天！！！、// 数据持久化。
-
-                userAccount.saveUserAccount()//归档
-            })
-        }
-    }
-    
-//      根据accesskon和用户id获取用户信息
-        func requestUserInfo(userAccount: YYUserAccount) -> Void {
-    
-            YYNetworkTools.shareTools.requestUserInfo(accessToken: userAccount.access_token!, uid: userAccount.uid) { (response, error) in
-    
-                if error != nil {
-                    print("网络请求异常: \(error)")
-                    return
-                }
-    
-                //  代码执行到此网络请求成功
-                guard let dic = response as? [String: Any] else {
-                    print("你不是一个正确的字典")
-                    return
-                }
-    
-                let name = dic["name"]
-                let profile_image_url = dic["profile_image_url"]
-    
-    
-                userAccount.name = name as? String
-                userAccount.profile_image_url = profile_image_url as? String
-    
-    
-                print(userAccount.name)
-    
-                //  代码执行到此,表示用户登录成功
-                userAccount.saveUserAccount()
-    
-    
-            }
-    
-    
-    
-        }
+  
 
 }
 
@@ -158,7 +85,8 @@ extension YYOauthViewController: UIWebViewDelegate{
         
         if let query = url.query, query.hasPrefix("code=") {
             let code = query.substring(from: "code=".endIndex)
-            requestAccessToken(code: code)
+//            requestAccessToken(code: code)
+            YYUserAccountVM.shareUserAccountVM.requestAccessToken(code: code)
         }
         
         
