@@ -44,14 +44,14 @@ class YYNetworkTools: AFHTTPSessionManager {
 extension YYNetworkTools{
     
     //通过access_token 获取用户信息
-    func requestUserInfo(accessToken:String, uid:Int64,callBack:@escaping (Any?,Error?)->()) -> Void {
+    func requestUserInfo(accessToken:String, uid:Int64,callBacks:@escaping (Any?,Error?)->()) -> Void {
         let url = "https://api.weibo.com/2/users/show.json"
         let params :[String :Any] = [
             "access_token": accessToken,
             "uid": uid
         ]
         
-        request(type: .GET, url: url, params: params, callBack: callBack)
+        request(type: .GET, url: url, params: params, callBack: callBacks)
         
         
     }

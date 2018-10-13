@@ -72,25 +72,26 @@ class YYOauthViewController: UIViewController {
             let userAccount = YYUserAccount(dict: dic)
             print(userAccount.access_token)
             
-            self.requestUserInfo(userAccount: userAccount)
-//            YYNetworkTools.shareTools.requestUserInfo(accessToken: userAccount.access_token!, uid: userAccount.uid, callBack: { (reponse, error) in
-//                if error != nil{
-//                    SVProgressHUD.show(withStatus: "wangluocuo")
-//                    return
-//                }
-//
-//                guard let dic = response as? [String: Any] else{
-//                    return
-//                }
-//
-//                print(dic)
-//
-//                userAccount.name = dic["name"] as? String
-//                userAccount.profile_image_url = dic["profile_image_url"] as? String
-//                //归档 解档  对照项目看看   至少研究一天！！！、// 数据持久化。
-//
-//                userAccount.saveUserAccount()//归档
-//            })
+//            self.requestUserInfo(userAccount: userAccount)
+            //为什么不对？ block换个名称是否可行？
+            YYNetworkTools.shareTools.requestUserInfo(accessToken: userAccount.access_token!, uid: userAccount.uid, callBacks: { (reponse, error) in
+                if error != nil{
+                    SVProgressHUD.show(withStatus: "wangluocuo")
+                    return
+                }
+
+                guard let dic = response as? [String: Any] else{
+                    return
+                }
+
+                print(dic)
+
+                userAccount.name = dic["name"] as? String
+                userAccount.profile_image_url = dic["profile_image_url"] as? String
+                //归档 解档  对照项目看看   至少研究一天！！！、// 数据持久化。
+
+                userAccount.saveUserAccount()//归档
+            })
         }
     }
     
