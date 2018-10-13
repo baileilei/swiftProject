@@ -10,7 +10,7 @@ import UIKit
 
 class YYVistorTableViewController: UITableViewController {
 
-    var isLogin : Bool = false
+    var isLogin : Bool = YYUserAccountVM.shareUserAccountVM.isLogin
     
     var vistorView :YYVistorView?
     

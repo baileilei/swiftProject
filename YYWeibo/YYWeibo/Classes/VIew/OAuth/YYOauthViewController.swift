@@ -88,7 +88,7 @@ extension YYOauthViewController: UIWebViewDelegate{
 //            requestAccessToken(code: code)
             YYUserAccountVM.shareUserAccountVM.requestAccessToken(code: code) { (isSuccess) in
                 if isSuccess{
-                    
+                    print("获取到用户信息就代表登录成功")
                 }
             }
         }

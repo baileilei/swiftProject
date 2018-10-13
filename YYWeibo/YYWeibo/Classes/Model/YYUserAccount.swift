@@ -21,7 +21,7 @@ class YYUserAccount: NSObject,NSCoding {
     
     required init?(coder aDecoder: NSCoder) {
         access_token = aDecoder.decodeObject(forKey: "access_token") as! String
-//        expireDate = aDecoder.decodeObject(forKey: "expireDate") as! Date
+        expireDate = aDecoder.decodeObject(forKey: "expireDate") as? Date
         uid = aDecoder.decodeInt64(forKey: "uid")
         name = aDecoder.decodeObject(forKey: "name") as? String
 //        profile_image_url = aDecoder.decodeObject(forKey: "profile_image_url") as! String
@@ -39,7 +39,7 @@ class YYUserAccount: NSObject,NSCoding {
     var access_token : String?
     var expires_in : TimeInterval = 0{
         didSet{
-            expireDate = Date().addingTimeInterval(expires_in)
+            expireDate = Date().addingTimeInterval(1000)
             
         }
         
@@ -47,6 +47,11 @@ class YYUserAccount: NSObject,NSCoding {
     var uid: Int64 = 0
     
     var expireDate:Date?
+//    { set方法？
+////        if self.expireDate == nil {
+////            return Date()
+////        }
+//    }
     
     func coparedExpire(expireDate:Date?) -> Bool {//没过期
         if expireDate?.compare(Date()) == .orderedDescending{

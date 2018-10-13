@@ -12,6 +12,30 @@ import SVProgressHUD
 class YYUserAccountVM: NSObject {
     static let shareUserAccountVM : YYUserAccountVM = YYUserAccountVM()
     
+    var isLogin: Bool {
+        return accessToken != nil
+    }
+    
+    
+    var accessToken :String?{
+        
+        let token = YYUserAccount.loadUserAccount()?.access_token
+        
+        let expiresDate = YYUserAccount.loadUserAccount()?.expireDate
+        
+        if let t = token {//, (expiresDate != nil)  用compare方法必要判空
+//            if expiresDate?.compare(Date()) == .orderedAscending{//临时处理
+                return t
+//            }else{
+//                return nil
+//            }
+        }else{
+            return nil
+        }
+    }
+    
+    
+    
     func requestAccessToken(code:String,successBlock:@escaping (Bool)->()){
         print(code)
         YYNetworkTools.shareTools.requestAccessToken(code: code) { (response, error) in
