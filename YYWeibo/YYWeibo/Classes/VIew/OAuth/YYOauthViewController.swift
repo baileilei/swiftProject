@@ -49,6 +49,7 @@ class YYOauthViewController: UIViewController {
     
     
     @objc func cancelAction() {
+        SVProgressHUD.dismiss()//
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -91,6 +92,9 @@ extension YYOauthViewController: UIWebViewDelegate{
                     print("获取到用户信息就代表登录成功")
                 }
             }
+        }else{
+            //取消授权  应该是一个网络请求？？
+            dismiss(animated: true, completion: nil)
         }
         
         
