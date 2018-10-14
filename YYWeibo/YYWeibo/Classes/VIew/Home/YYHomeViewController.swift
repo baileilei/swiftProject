@@ -53,6 +53,7 @@ extension YYHomeViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "YYHomeTableViewCellIndentifier", for: indexPath) as! YYHomeTableViewCell
         
         cell.backgroundColor = RandomColor()
+        cell.statusVM = statusListVM.statusList[indexPath.row]
         return cell;
     }
     

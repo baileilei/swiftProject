@@ -10,7 +10,7 @@ import UIKit
 
 class YYStatusListVM: NSObject {
     
-    lazy var statusList : [YYStatus] = [YYStatus]()
+    lazy var statusList : [YYStatusVM] = [YYStatusVM]()
     
     //load home data
      func loadData(callBack:@escaping(Bool)->()) {
@@ -33,7 +33,16 @@ class YYStatusListVM: NSObject {
             }
             
             let statusArr = NSArray.yy_modelArray(with: YYStatus.self, json: statusArray) as! [YYStatus]
-            self.statusList = statusArr
+            
+            var tempArray = [YYStatusVM]()
+            
+            for status in statusArr{
+                let VM = YYStatusVM(status: status)
+                tempArray.append(VM)
+            }
+            self.statusList = tempArray
+            
+//            self.statusList = statusArr
              callBack(true)
             
 //            self.tableView.reloadData()

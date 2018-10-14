@@ -10,6 +10,9 @@ import UIKit
 //三大块-----其实就是分层   封装
 class YYHomeTableViewCell: UITableViewCell {
     
+    var statusVM: YYStatusVM? 
+    
+    
     private lazy var originalView:YYStatusOriginalView = {
         let view = YYStatusOriginalView()
         
