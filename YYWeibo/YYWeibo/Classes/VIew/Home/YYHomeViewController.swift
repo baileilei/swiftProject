@@ -9,6 +9,8 @@
 import UIKit
 import YYModel
 
+private let YYHomeTableViewCellIndentifier = "YYHomeTableViewCellIndentifier"
+
 class YYHomeViewController: YYVistorTableViewController {
     //private VS fileprivate的区别
     fileprivate lazy var statusListVM :YYStatusListVM = YYStatusListVM()
@@ -22,6 +24,7 @@ class YYHomeViewController: YYVistorTableViewController {
             vistorView?.updateVisitorInfo(message: nil, imageName: nil)
         }else{
 //            loadData()
+            setupTableView()
             statusListVM.loadData { (isSuccess) in
                 if isSuccess {
                     self.tableView.reloadData()
@@ -32,7 +35,8 @@ class YYHomeViewController: YYVistorTableViewController {
     }
     
     private func setupTableView(){
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "test")
+        tableView.register(YYHomeTableViewCell.self, forCellReuseIdentifier: "YYHomeTableViewCellIndentifier")
+        tableView.rowHeight = 200
     }
     
    
@@ -46,9 +50,9 @@ extension YYHomeViewController{
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "YYHomeTableViewCellIndentifier", for: indexPath) as! YYHomeTableViewCell
         
-        
+        cell.backgroundColor = UIColor.green
         return cell;
     }
     

@@ -9,14 +9,14 @@
 import UIKit
 
 class YYStatus: NSObject {
-    var created_at:String?
-    var id:Int64 = 0
+    @objc var created_at:String?
+    @objc var id:Int64 = 0
     
-    var text:String?
-    var source:String?
+    @objc var text:String?
+    @objc var source:String?
     
     
-    var user: YYUser? 
+    @objc var user: YYUser? 
     
     
     
