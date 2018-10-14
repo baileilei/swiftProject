@@ -7,7 +7,9 @@
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
-//
+/*
+ YYClassIvarInfo(成员变量)   YYClassMethodInfo(类方法)   YYClassPropertyInfo(属性)   YYClassInfo(类)
+ */
 
 #import <Foundation/Foundation.h>
 

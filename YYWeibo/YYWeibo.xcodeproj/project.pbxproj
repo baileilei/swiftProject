@@ -86,6 +86,7 @@
 		063F7AF32172E7D20067A91B /* YYStatusOriginalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AF22172E7D20067A91B /* YYStatusOriginalView.swift */; };
 		063F7AF52172E7E70067A91B /* YYStatusRetweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AF42172E7E70067A91B /* YYStatusRetweetView.swift */; };
 		063F7AF72172E7FB0067A91B /* YYStatusToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AF62172E7FB0067A91B /* YYStatusToolBar.swift */; };
+		063F7AF92172F57C0067A91B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AF82172F57C0067A91B /* UIColor+Extension.swift */; };
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
@@ -234,6 +235,7 @@
 		063F7AF22172E7D20067A91B /* YYStatusOriginalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatusOriginalView.swift; sourceTree = "<group>"; };
 		063F7AF42172E7E70067A91B /* YYStatusRetweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatusRetweetView.swift; sourceTree = "<group>"; };
 		063F7AF62172E7FB0067A91B /* YYStatusToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatusToolBar.swift; sourceTree = "<group>"; };
+		063F7AF82172F57C0067A91B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccount.swift; sourceTree = "<group>"; };
 		06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccountVM.swift; sourceTree = "<group>"; };
 		6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -435,6 +437,7 @@
 			children = (
 				063A5E742169964A00A4F86F /* UIView+Extension.swift */,
 				063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */,
+				063F7AF82172F57C0067A91B /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -877,6 +880,7 @@
 				063A5F0E216E2C6700A4F86F /* SDImageCache.m in Sources */,
 				063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */,
 				063A5F12216E2C6700A4F86F /* UIView+WebCacheOperation.m in Sources */,
+				063F7AF92172F57C0067A91B /* UIColor+Extension.swift in Sources */,
 				063A5E9D216CDD3500A4F86F /* YYNetworkTools.swift in Sources */,
 				063A5F0F216E2C6700A4F86F /* SDWebImageDownloaderOperation.m in Sources */,
 				063A5E98216A21B400A4F86F /* ConstraintItem.swift in Sources */,

@@ -12,7 +12,7 @@ class YYHomeTableViewCell: UITableViewCell {
     
     private lazy var originalView:YYStatusOriginalView = {
         let view = YYStatusOriginalView()
-        view.backgroundColor = UIColor.red
+//        view.backgroundColor = UIColor.red
         
         return view
         
