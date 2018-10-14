@@ -10,8 +10,9 @@ import UIKit
 import YYModel
 
 class YYHomeViewController: YYVistorTableViewController {
-    
-    lazy var statusList : [YYStatus] = [YYStatus]()
+    //private VS fileprivate的区别
+    fileprivate lazy var statusListVM :YYStatusListVM = YYStatusListVM()
+//    lazy var statusList : [YYStatus] = [YYStatus]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,12 @@ class YYHomeViewController: YYVistorTableViewController {
             
             vistorView?.updateVisitorInfo(message: nil, imageName: nil)
         }else{
-            loadData()
+//            loadData()
+            statusListVM.loadData { (isSuccess) in
+                if isSuccess {
+                    self.tableView.reloadData()
+                }
+            }
         }
         
     }
@@ -29,40 +35,13 @@ class YYHomeViewController: YYVistorTableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "test")
     }
     
-    //load home data
-    func loadData() {
-        let accessToken = YYUserAccount.loadUserAccount()?.access_token
-        YYNetworkTools.shareTools.requestStatuses(accessToken: accessToken!) { (reponse, error) in
-            if error != nil{
-                return
-            }
-            
-            guard let dict : [String:Any] = reponse as? [String:Any] else{
-                return
-            }
-            
-            
-            guard let statusArray = dict["statuses"] as? [[String:Any]] else{
-                return
-            }
-            
-            let statusArr = NSArray.yy_modelArray(with: YYStatus.self, json: statusArray) as! [YYStatus]
-            self.statusList = statusArr
-            
-            
-            self.tableView.reloadData()
-            
-        }
-        
-    }
-    
+   
 }
-
 
 extension YYHomeViewController{
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.statusList.count
+        return self.statusListVM.statusList.count
     }
     
     
@@ -72,5 +51,6 @@ extension YYHomeViewController{
         
         return cell;
     }
+    
     
 }
