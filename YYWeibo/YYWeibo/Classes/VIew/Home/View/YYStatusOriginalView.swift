@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 let YYHomeCellMargin : CGFloat = 10
 let ScreenWidth = UIScreen.main.bounds.size.width
@@ -14,6 +15,23 @@ let ScreenWidth = UIScreen.main.bounds.size.width
 
 
 class YYStatusOriginalView: UIView {
+    
+    var statusVM:YYStatusVM? {
+        didSet{//如何绑定？
+            screenNameLabel.text = statusVM?.status?.user?.screen_name
+            if let userImageUrl = statusVM?.status?.user?.profile_image_url {
+//                userIamgeView.setImageWith(URL(string: userImageUrl)!)
+//                userIamgeView.setImageWith(URL(string: userImageUrl)!, placeholderImage: UIImage(named: "avatar_default_big"))//可用来测试流量耗费情况
+                userIamgeView.sd_setImage(with: URL(string: userImageUrl), placeholderImage: UIImage(named: "avatar_default_big"), options: SDWebImageOptions(rawValue: 0), completed: nil)
+//                userIamgeView.sd_setImage(with: <#T##URL?#>, placeholderImage: <#T##UIImage?#>, options: <#T##SDWebImageOptions#>, progress: <#T##SDWebImageDownloaderProgressBlock?##SDWebImageDownloaderProgressBlock?##(Int, Int, URL?) -> Void#>, completed: <#T##SDExternalCompletionBlock?##SDExternalCompletionBlock?##(UIImage?, Error?, SDImageCacheType, URL?) -> Void#>)
+                timeLabel.text = statusVM?.status?.created_at
+                sourceLabel.text = statusVM?.status?.source
+                contentLabel.text = statusVM?.status?.text
+                mbrankImageView.image = statusVM?.mbrankImage
+            }
+        }
+    }
+    
 
     private lazy var userIamgeView:UIImageView = UIImageView(image: (UIImage(named: "avatar_default_big")))
     private lazy var verifiedTypeImageView : UIImageView = UIImageView(image: UIImage(named: "avatar_vip"))

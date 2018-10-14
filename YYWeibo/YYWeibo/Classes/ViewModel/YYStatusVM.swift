@@ -15,6 +15,16 @@ class YYStatusVM: NSObject {
     init(status:YYStatus) {
         super.init()
         self.status = status
+        
+        handleMBrankImage(mbrank: status.user?.mbrank ?? 0)
+    }
+    
+    var mbrankImage: UIImage? 
+    
+    private func handleMBrankImage(mbrank:Int){
+        if mbrank >= 1 && mbrank <= 6{
+            mbrankImage = UIImage(named: "common_icon_membership_level\(mbrank)")
+        }
     }
     
 }
