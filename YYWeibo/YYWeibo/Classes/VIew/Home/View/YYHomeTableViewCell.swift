@@ -34,6 +34,14 @@ class YYHomeTableViewCell: UITableViewCell {
         return view
         
     }()
+    
+    private lazy var retweentView: YYStatusRetweetView = {
+        let view = YYStatusRetweetView()
+        
+        view.backgroundColor = RandomColor()
+        return view
+        
+    }()
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -47,6 +55,7 @@ class YYHomeTableViewCell: UITableViewCell {
     
     private func setupUI(){
         contentView.addSubview(originalView)
+        contentView.addSubview(retweentView)
         contentView.addSubview(toolBar)
         
         originalView.snp_makeConstraints { (make) in
@@ -56,10 +65,19 @@ class YYHomeTableViewCell: UITableViewCell {
 //            make.bottom.equalTo(contentView)
         }
         
-        toolBar.snp_makeConstraints { (make) in
+        retweentView.snp_makeConstraints { (make) in
             make.top.equalTo(originalView.snp_bottom)
             make.leading.equalTo(originalView)
             make.trailing.equalTo(originalView)
+            
+        }
+        
+        
+        
+        toolBar.snp_makeConstraints { (make) in
+            make.top.equalTo(retweentView.snp_bottom)
+            make.leading.equalTo(retweentView)
+            make.trailing.equalTo(retweentView)
             make.height.equalTo(35)
             
             //关键约束  -----最后一个控件的底部   给cell的
