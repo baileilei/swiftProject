@@ -23,6 +23,7 @@ class YYStatus: NSObject {
     @objc var attitudes_count:Int = 0
     
     
+    @objc var retweeted_status : YYStatus?
     
     
     

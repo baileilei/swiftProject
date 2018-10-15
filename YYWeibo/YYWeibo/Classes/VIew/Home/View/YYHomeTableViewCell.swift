@@ -10,10 +10,26 @@ import UIKit
 //三大块-----其实就是分层   封装
 class YYHomeTableViewCell: UITableViewCell {
     
+    var toolBarTopConstraint: Constraint?
+    
     var statusVM: YYStatusVM?{
         didSet{
             originalView.statusVM = statusVM
             toolBar.statusVM = statusVM
+            if statusVM?.retweetContent != nil{
+                retweentView.statusVM = statusVM
+                toolBarTopConstraint?.uninstall()
+                toolBar.snp_updateConstraints { (make) in
+                    toolBarTopConstraint = make.top.equalTo(retweentView.snp_bottom).constraint
+                }
+            }else{
+                retweentView.isHidden = true
+                toolBarTopConstraint?.uninstall()
+                toolBar.snp_updateConstraints { (make) in
+                    toolBarTopConstraint = make.top.equalTo(originalView.snp_bottom).constraint
+                }
+            }
+            
         }
         
     }
@@ -75,7 +91,7 @@ class YYHomeTableViewCell: UITableViewCell {
         
         
         toolBar.snp_makeConstraints { (make) in
-            make.top.equalTo(retweentView.snp_bottom)
+            toolBarTopConstraint = make.top.equalTo(retweentView.snp_bottom).constraint
             make.leading.equalTo(retweentView)
             make.trailing.equalTo(retweentView)
             make.height.equalTo(35)

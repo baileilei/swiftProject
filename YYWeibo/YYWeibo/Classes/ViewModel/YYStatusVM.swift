@@ -20,15 +20,29 @@ class YYStatusVM: NSObject {
         retweetCountContetn = handleCountContent(count: status.reposts_count, defaultTitle: "转发")
         commentCountContent = handleCountContent(count: status.comments_count, defaultTitle: "评论")
         unlikeCountContent = handleCountContent(count: status.attitudes_count, defaultTitle: "赞")
+        handleRetweetContent(status: status)
+    
     }
     
     var mbrankImage: UIImage?
     var retweetCountContetn:String?
     var commentCountContent:String?
     var unlikeCountContent:String?
+    var retweetContent:String?
     
     
     
+    private func handleRetweetContent(status: YYStatus){
+        if status.retweeted_status != nil {
+            let name = status.retweeted_status?.user?.screen_name
+            
+            let text = status.retweeted_status?.text
+            
+            if name != nil, text != nil{
+                retweetContent = "@\(name!):\(text!)"
+            }
+        }
+    }
     
     private func handleCountContent(count:Int, defaultTitle:String)-> String{
         if count > 0{

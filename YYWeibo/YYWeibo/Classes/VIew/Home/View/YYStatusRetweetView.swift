@@ -9,6 +9,14 @@
 import UIKit
 
 class YYStatusRetweetView: UIView {
+    
+    var statusVM : YYStatusVM? {
+        didSet{
+//            contentLabel.text = statusVM?.status?.retweeted_status?.text
+            contentLabel.text = statusVM?.retweetContent
+        }
+    }
+    
 
     private lazy var contentLabel: UILabel = {
         let label = UILabel(textColor: UIColor.lightGray, fontSize: 14, isMultiNumbers: 0)
