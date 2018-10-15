@@ -61,7 +61,15 @@ class YYHomeTableViewCell: UITableViewCell {
             make.leading.equalTo(originalView)
             make.trailing.equalTo(originalView)
             make.height.equalTo(35)
+            
+            //关键约束  -----最后一个控件的底部   给cell的
+            make.bottom.equalTo(contentView.snp_bottom)
         }
+        
+//        contentView.snp_makeConstraints { (make) in
+//            make.bottom.equalTo(toolBar)
+//            
+//        }
     }
     
 }

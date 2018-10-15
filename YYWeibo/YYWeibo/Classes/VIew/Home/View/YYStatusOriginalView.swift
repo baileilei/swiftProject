@@ -126,7 +126,7 @@ class YYStatusOriginalView: UIView {
         }
         
         
-        //关键约束
+        //关键约束-----给原创微博View的。  即originalView
         self.snp_makeConstraints { (make) in
             make.bottom.equalTo(contentLabel).offset(10)
         }

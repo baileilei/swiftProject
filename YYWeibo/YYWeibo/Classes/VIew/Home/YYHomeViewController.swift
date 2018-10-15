@@ -36,7 +36,10 @@ class YYHomeViewController: YYVistorTableViewController {
     
     private func setupTableView(){
         tableView.register(YYHomeTableViewCell.self, forCellReuseIdentifier: "YYHomeTableViewCellIndentifier")
-        tableView.rowHeight = 200
+        //自动计算行高
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 200
+        
     }
     
    
