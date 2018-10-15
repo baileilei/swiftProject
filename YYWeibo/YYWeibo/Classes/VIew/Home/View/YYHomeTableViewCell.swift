@@ -13,6 +13,7 @@ class YYHomeTableViewCell: UITableViewCell {
     var statusVM: YYStatusVM?{
         didSet{
             originalView.statusVM = statusVM
+            toolBar.statusVM = statusVM
         }
         
     }
@@ -20,6 +21,14 @@ class YYHomeTableViewCell: UITableViewCell {
     
     private lazy var originalView:YYStatusOriginalView = {
         let view = YYStatusOriginalView()
+        view.backgroundColor = RandomColor()
+        
+        return view
+        
+    }()
+    
+    private lazy var toolBar: YYStatusToolBar = {
+        let view = YYStatusToolBar()
         view.backgroundColor = RandomColor()
         
         return view
@@ -38,12 +47,20 @@ class YYHomeTableViewCell: UITableViewCell {
     
     private func setupUI(){
         contentView.addSubview(originalView)
+        contentView.addSubview(toolBar)
         
         originalView.snp_makeConstraints { (make) in
             make.top.equalTo(contentView)
             make.leading.equalTo(contentView)
             make.trailing.equalTo(contentView)
 //            make.bottom.equalTo(contentView)
+        }
+        
+        toolBar.snp_makeConstraints { (make) in
+            make.top.equalTo(originalView.snp_bottom)
+            make.leading.equalTo(originalView)
+            make.trailing.equalTo(originalView)
+            make.height.equalTo(35)
         }
     }
     

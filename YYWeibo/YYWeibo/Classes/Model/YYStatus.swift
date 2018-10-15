@@ -16,7 +16,13 @@ class YYStatus: NSObject {
     @objc var source:String?
     
     
-    @objc var user: YYUser? 
+    @objc var user: YYUser?
+    
+    @objc var reposts_count: Int = 0
+    @objc var comments_count:Int = 0
+    @objc var attitudes_count:Int = 0
+    
+    
     
     
     

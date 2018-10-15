@@ -17,9 +17,29 @@ class YYStatusVM: NSObject {
         self.status = status
         
         handleMBrankImage(mbrank: status.user?.mbrank ?? 0)
+        retweetCountContetn = handleCountContent(count: status.reposts_count, defaultTitle: "转发")
+        commentCountContent = handleCountContent(count: status.comments_count, defaultTitle: "评论")
+        unlikeCountContent = handleCountContent(count: status.attitudes_count, defaultTitle: "赞")
     }
     
-    var mbrankImage: UIImage? 
+    var mbrankImage: UIImage?
+    var retweetCountContetn:String?
+    var commentCountContent:String?
+    var unlikeCountContent:String?
+    
+    
+    
+    
+    private func handleCountContent(count:Int, defaultTitle:String)-> String{
+        if count > 0{
+            return "\(count)"
+        }else{
+            return defaultTitle
+            
+        }
+        
+        
+    }
     
     private func handleMBrankImage(mbrank:Int){
         if mbrank >= 1 && mbrank <= 6{
