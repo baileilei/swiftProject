@@ -20,6 +20,7 @@ class YYHomeTableViewCell: UITableViewCell {
     
     private lazy var originalView:YYStatusOriginalView = {
         let view = YYStatusOriginalView()
+        view.backgroundColor = RandomColor()
         
         return view
         
@@ -42,7 +43,7 @@ class YYHomeTableViewCell: UITableViewCell {
             make.top.equalTo(contentView)
             make.leading.equalTo(contentView)
             make.trailing.equalTo(contentView)
-            make.bottom.equalTo(contentView)
+//            make.bottom.equalTo(contentView)
         }
     }
     

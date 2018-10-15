@@ -52,7 +52,7 @@ extension YYHomeViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "YYHomeTableViewCellIndentifier", for: indexPath) as! YYHomeTableViewCell
         
-        cell.backgroundColor = RandomColor()
+//        cell.backgroundColor = RandomColor()
         cell.statusVM = statusListVM.statusList[indexPath.row]
         return cell;
     }

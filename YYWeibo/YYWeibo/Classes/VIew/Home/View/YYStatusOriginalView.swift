@@ -37,9 +37,9 @@ class YYStatusOriginalView: UIView {
     private lazy var verifiedTypeImageView : UIImageView = UIImageView(image: UIImage(named: "avatar_vip"))
     
     private lazy var screenNameLabel : UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = UIColor.darkGray
+        let label = UILabel(textColor: UIColor.darkGray, fontSize: 14, isMultiNumbers: 1)
+//        label.font = UIFont.systemFont(ofSize: 14)
+//        label.textColor = UIColor.darkGray
         label.text = "小逗比 神吐槽，不要太敏感哦"
         return label
     }()
@@ -47,9 +47,9 @@ class YYStatusOriginalView: UIView {
     private lazy var mbrankImageView : UIImageView = UIImageView(image: UIImage(named: "common_icon_membership"))
     
     private lazy var timeLabel : UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = UIColor.darkGray
+        let label = UILabel(textColor: UIColor.darkGray, fontSize: 14,isMultiNumbers:1)
+//        label.font = UIFont.systemFont(ofSize: 14)
+//        label.textColor = UIColor.darkGray
         return label
     }()
     
@@ -62,11 +62,11 @@ class YYStatusOriginalView: UIView {
     }()
     
     private lazy var contentLabel : UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = UIColor.darkGray
+        let label = UILabel(textColor: UIColor.darkGray, fontSize: 14, isMultiNumbers: 0)
+//        label.font = UIFont.systemFont(ofSize: 14)
+//        label.textColor = UIColor.darkGray
         label.text = "来自星星的你,asdlfkjsalkdf来自星星的你,asdlfkjsalkdf来自星星的你,asdlfkjsalkdf来自星星的你,asdlfkjsalkdfj"
-        label.numberOfLines = 0
+//        label.numberOfLines = 0
         return label
     }()
     
@@ -125,6 +125,11 @@ class YYStatusOriginalView: UIView {
             make.width.equalTo(ScreenWidth - 2 * YYHomeCellMargin)
         }
         
+        
+        //关键约束
+        self.snp_makeConstraints { (make) in
+            make.bottom.equalTo(contentLabel).offset(10)
+        }
     }
     
 

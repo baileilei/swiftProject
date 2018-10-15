@@ -88,6 +88,7 @@
 		063F7AF72172E7FB0067A91B /* YYStatusToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AF62172E7FB0067A91B /* YYStatusToolBar.swift */; };
 		063F7AF92172F57C0067A91B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AF82172F57C0067A91B /* UIColor+Extension.swift */; };
 		063F7AFB2172FE5F0067A91B /* YYStatusVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AFA2172FE5F0067A91B /* YYStatusVM.swift */; };
+		063F7AFD2174C1FB0067A91B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AFC2174C1FB0067A91B /* UILabel+Extension.swift */; };
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
@@ -238,6 +239,7 @@
 		063F7AF62172E7FB0067A91B /* YYStatusToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatusToolBar.swift; sourceTree = "<group>"; };
 		063F7AF82172F57C0067A91B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		063F7AFA2172FE5F0067A91B /* YYStatusVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatusVM.swift; sourceTree = "<group>"; };
+		063F7AFC2174C1FB0067A91B /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccount.swift; sourceTree = "<group>"; };
 		06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccountVM.swift; sourceTree = "<group>"; };
 		6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -441,6 +443,7 @@
 				063A5E742169964A00A4F86F /* UIView+Extension.swift */,
 				063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */,
 				063F7AF82172F57C0067A91B /* UIColor+Extension.swift */,
+				063F7AFC2174C1FB0067A91B /* UILabel+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -844,6 +847,7 @@
 				063A5F0A216E2C6700A4F86F /* UIImage+GIF.m in Sources */,
 				063A5E9B216A21B400A4F86F /* LayoutConstraint.swift in Sources */,
 				063A5ECD216E2C5000A4F86F /* AFAutoPurgingImageCache.m in Sources */,
+				063F7AFD2174C1FB0067A91B /* UILabel+Extension.swift in Sources */,
 				063A5ED2216E2C5000A4F86F /* AFURLRequestSerialization.m in Sources */,
 				063A5E302166E81B00A4F86F /* ViewController.swift in Sources */,
 				063F7AF12172E7A00067A91B /* YYHomeTableViewCell.swift in Sources */,
