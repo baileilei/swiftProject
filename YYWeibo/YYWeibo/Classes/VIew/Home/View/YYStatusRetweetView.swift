@@ -10,10 +10,29 @@ import UIKit
 
 class YYStatusRetweetView: UIView {
     
+    var retweetViewBottomConstraint: Constraint?
+    
+    
     var statusVM : YYStatusVM? {
         didSet{
 //            contentLabel.text = statusVM?.status?.retweeted_status?.text
             contentLabel.text = statusVM?.retweetContent
+           
+//                                statusVM?.status?.pic_urls
+            retweetViewBottomConstraint?.uninstall()
+            if let cot = statusVM?.status?.retweeted_status?.pic_urls?.count,  cot > 0 {
+                
+                pictureView.isHidden = false
+                self.snp_updateConstraints { (make) in
+                    retweetViewBottomConstraint = make.bottom.equalTo(pictureView).offset(10).constraint
+                     pictureView.picUrls = statusVM?.status?.retweeted_status?.pic_urls
+                }
+            }else{
+                pictureView.isHidden = true
+                self.snp_updateConstraints { (make) in
+                    retweetViewBottomConstraint = make.bottom.equalTo(contentLabel).offset(10).constraint
+                }
+            }
         }
     }
     
@@ -22,6 +41,15 @@ class YYStatusRetweetView: UIView {
         let label = UILabel(textColor: UIColor.lightGray, fontSize: 14, isMultiNumbers: 0)
         label.text = "slfjaskfjlasfsdfsadfhaha"
         return label
+    }()
+    
+    private lazy var pictureView:YYStatusPictureView = {
+        let view = YYStatusPictureView()
+        
+        
+        
+        return view
+        
     }()
     
     override init(frame: CGRect) {
@@ -35,6 +63,7 @@ class YYStatusRetweetView: UIView {
     
     private func setupUI(){
         addSubview(contentLabel)
+        addSubview(pictureView)
         
         contentLabel.snp_makeConstraints { (make) in
             make.top.equalTo(self).offset(10)
@@ -42,9 +71,15 @@ class YYStatusRetweetView: UIView {
             make.width.equalTo(ScreenWidth - 2 * YYHomeCellMargin)
         }
         
+        pictureView.snp_makeConstraints { (make) in
+            make.leading.equalTo(contentLabel)
+            make.top.equalTo(contentLabel.snp_bottom).offset(10)
+//            make.size.equalTo(CGSize(width: 100, height: 100))
+        }
+        
         //关键约束---当前视图的底部约束！  当前视图的高度始终是最后一个控件决定的
         self.snp_makeConstraints { (make) in
-            make.bottom.equalTo(contentLabel).offset(10)
+            retweetViewBottomConstraint = make.bottom.equalTo(pictureView).offset(10).constraint
         }
     }
     

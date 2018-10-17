@@ -89,6 +89,8 @@
 		063F7AF92172F57C0067A91B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AF82172F57C0067A91B /* UIColor+Extension.swift */; };
 		063F7AFB2172FE5F0067A91B /* YYStatusVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AFA2172FE5F0067A91B /* YYStatusVM.swift */; };
 		063F7AFD2174C1FB0067A91B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AFC2174C1FB0067A91B /* UILabel+Extension.swift */; };
+		063F7AFF2174E2D00067A91B /* YYStatusPictureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7AFE2174E2D00067A91B /* YYStatusPictureInfo.swift */; };
+		063F7B01217626CC0067A91B /* YYStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7B00217626CC0067A91B /* YYStatusPictureView.swift */; };
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
@@ -240,6 +242,8 @@
 		063F7AF82172F57C0067A91B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		063F7AFA2172FE5F0067A91B /* YYStatusVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatusVM.swift; sourceTree = "<group>"; };
 		063F7AFC2174C1FB0067A91B /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		063F7AFE2174E2D00067A91B /* YYStatusPictureInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatusPictureInfo.swift; sourceTree = "<group>"; };
+		063F7B00217626CC0067A91B /* YYStatusPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStatusPictureView.swift; sourceTree = "<group>"; };
 		06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccount.swift; sourceTree = "<group>"; };
 		06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccountVM.swift; sourceTree = "<group>"; };
 		6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -375,6 +379,7 @@
 				06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */,
 				063F7AE9217252650067A91B /* YYStatus.swift */,
 				063F7AEB2172579C0067A91B /* YYUser.swift */,
+				063F7AFE2174E2D00067A91B /* YYStatusPictureInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -618,6 +623,7 @@
 			isa = PBXGroup;
 			children = (
 				063F7AF02172E79F0067A91B /* YYHomeTableViewCell.swift */,
+				063F7B00217626CC0067A91B /* YYStatusPictureView.swift */,
 				063F7AF22172E7D20067A91B /* YYStatusOriginalView.swift */,
 				063F7AF42172E7E70067A91B /* YYStatusRetweetView.swift */,
 				063F7AF62172E7FB0067A91B /* YYStatusToolBar.swift */,
@@ -846,6 +852,7 @@
 				063A5ECB216E2C5000A4F86F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				063A5F0A216E2C6700A4F86F /* UIImage+GIF.m in Sources */,
 				063A5E9B216A21B400A4F86F /* LayoutConstraint.swift in Sources */,
+				063F7B01217626CC0067A91B /* YYStatusPictureView.swift in Sources */,
 				063A5ECD216E2C5000A4F86F /* AFAutoPurgingImageCache.m in Sources */,
 				063F7AFD2174C1FB0067A91B /* UILabel+Extension.swift in Sources */,
 				063A5ED2216E2C5000A4F86F /* AFURLRequestSerialization.m in Sources */,
@@ -895,6 +902,7 @@
 				063A5F0F216E2C6700A4F86F /* SDWebImageDownloaderOperation.m in Sources */,
 				063A5E98216A21B400A4F86F /* ConstraintItem.swift in Sources */,
 				063A5F16216E2D9700A4F86F /* forBridgeFIle.m in Sources */,
+				063F7AFF2174E2D00067A91B /* YYStatusPictureInfo.swift in Sources */,
 				063F7AF52172E7E70067A91B /* YYStatusRetweetView.swift in Sources */,
 				063A5E702166E9F000A4F86F /* YYProfileViewController.swift in Sources */,
 				063A5ED3216E2C5000A4F86F /* AFNetworkReachabilityManager.m in Sources */,

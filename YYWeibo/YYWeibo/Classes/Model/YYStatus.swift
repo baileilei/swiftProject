@@ -25,7 +25,10 @@ class YYStatus: NSObject {
     
     @objc var retweeted_status : YYStatus?
     
+    @objc var pic_urls : [YYStatusPictureInfo]?
     
-    
+    class func modelContainerPropertyGenericClass()-> [String:Any]{
+        return ["pic_urls" : YYStatusPictureInfo.self]
+    }
     
 }

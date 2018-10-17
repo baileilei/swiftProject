@@ -30,6 +30,7 @@ class YYHomeTableViewCell: UITableViewCell {
                 }
             }
             
+//            print(statusVM?.status?.pic_urls?.first?.thumbnail_pic)
         }
         
     }
@@ -54,7 +55,7 @@ class YYHomeTableViewCell: UITableViewCell {
     private lazy var retweentView: YYStatusRetweetView = {
         let view = YYStatusRetweetView()
         
-        view.backgroundColor = RandomColor()
+//        view.backgroundColor = RandomColor()
         return view
         
     }()
@@ -104,6 +105,8 @@ class YYHomeTableViewCell: UITableViewCell {
 //            make.bottom.equalTo(toolBar)
 //            
 //        }
+        
+        
     }
     
 }
