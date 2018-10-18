@@ -17,4 +17,12 @@ TODO:
 
 
 
-5.PopUpSelectorViewController
+5.PopUpSelectorViewControllerb     怎么混编？
+在桥接文件 导入OC文件，OC可以定义PCH文件导入”工程名 -Swift.h"
+
+四、自定义桥接文件
+如果不用Xcode提示创建桥接文件也可以自定义一个桥接文件
+1     使用 Header File  把里面的内容清空。
+2、 这文件名可以自定义， 一般还是用 工程名-Bridging-Header.h   例如app - file.h
+3    然后在 Build Setting -> Swift Compiler - Code Generation中// 搜索Bridging
+4、设置Objective-C Bridging Header 为自定义的桥接文件相对于工程的绝对路径，也就是项目总文件夹的路径，如果在第一层，就直接写自定义的桥接文件的名file.h，如果在下一层，文件夹/桥接文件 app/file.h

@@ -82,6 +82,8 @@
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
+		FD0916BB217830EC00C53740 /* PopUpSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD0916B9217830EB00C53740 /* PopUpSelectorViewController.xib */; };
+		FD0916BC217830EC00C53740 /* PopUpSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0916BA217830EC00C53740 /* PopUpSelectorViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD2753C3216C5C9600C160D0 /* TaskBackup.txt */; };
 		FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2753C6216C874600C160D0 /* YYOauthViewController.swift */; };
 /* End PBXBuildFile section */
@@ -227,6 +229,10 @@
 		A02A1A1A790501DF470AED82 /* Pods_YYWeiboTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeiboTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE12EEE2422B39EC8CB70E29 /* Pods-YYWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYWeibo/Pods-YYWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		EA48132953DDCD55CE93C63E /* Pods-YYWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYWeibo/Pods-YYWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		FD0916B8217830EB00C53740 /* PopUpSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpSelectorViewController.h; sourceTree = "<group>"; };
+		FD0916B9217830EB00C53740 /* PopUpSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpSelectorViewController.xib; sourceTree = "<group>"; };
+		FD0916BA217830EC00C53740 /* PopUpSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpSelectorViewController.m; sourceTree = "<group>"; };
+		FD0916C02178371800C53740 /* YYWeibo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYWeibo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD2753C2216C5C6E00C160D0 /* NotificationPayloadTest.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadTest.apns; sourceTree = "<group>"; };
 		FD2753C3216C5C9600C160D0 /* TaskBackup.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TaskBackup.txt; sourceTree = "<group>"; };
 		FD2753C6216C874600C160D0 /* YYOauthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYOauthViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +267,7 @@
 		063A5E212166E81B00A4F86F = {
 			isa = PBXGroup;
 			children = (
+				FD0916C02178371800C53740 /* YYWeibo-Bridging-Header.h */,
 				063A5E2C2166E81B00A4F86F /* YYWeibo */,
 				063A5E412166E81C00A4F86F /* YYWeiboTests */,
 				063A5E4C2166E81C00A4F86F /* YYWeiboUITests */,
@@ -424,6 +431,9 @@
 		063A5E782169CF9C00A4F86F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD0916B8217830EB00C53740 /* PopUpSelectorViewController.h */,
+				FD0916BA217830EC00C53740 /* PopUpSelectorViewController.m */,
+				FD0916B9217830EB00C53740 /* PopUpSelectorViewController.xib */,
 				063A5E792169CFC600A4F86F /* YYSearchView.swift */,
 				063A5E7B2169D01800A4F86F /* YYSearchView.xib */,
 			);
@@ -730,6 +740,7 @@
 				FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */,
 				063A5EE1216E2C6000A4F86F /* README.md in Resources */,
 				063A5E352166E81C00A4F86F /* Assets.xcassets in Resources */,
+				FD0916BB217830EC00C53740 /* PopUpSelectorViewController.xib in Resources */,
 				063A5EE2216E2C6000A4F86F /* LICENSE.txt in Resources */,
 				063A5E332166E81B00A4F86F /* Main.storyboard in Resources */,
 			);
@@ -841,6 +852,7 @@
 				063A5ED4216E2C5000A4F86F /* AFSecurityPolicy.m in Sources */,
 				063A5E94216A21B400A4F86F /* SnapKit.swift in Sources */,
 				063A5EDF216E2C6000A4F86F /* SVIndefiniteAnimatedView.m in Sources */,
+				FD0916BC217830EC00C53740 /* PopUpSelectorViewController.m in Sources */,
 				063A5F0E216E2C6700A4F86F /* SDImageCache.m in Sources */,
 				063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */,
 				063A5F12216E2C6700A4F86F /* UIView+WebCacheOperation.m in Sources */,
@@ -1034,6 +1046,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = YYWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1046,6 +1059,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yy.YYWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YYWeibo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1058,6 +1072,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = YYWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1070,6 +1085,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yy.YYWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YYWeibo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

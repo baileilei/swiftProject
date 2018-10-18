@@ -18,6 +18,9 @@ class YYSearchView: UISearchBar {
         
         print("调了没？？？")
         searchTextFieldRightConstraint.constant = searchButton.width
+        
+        let searchVC = PopUpSelectorViewController()
+        
     }
     
     
