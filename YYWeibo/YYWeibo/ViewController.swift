@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QorumLogs
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         view.backgroundColor = UIColor.orange
+        QL4("444")
+        QL2("2222222")
     }
 
     override func didReceiveMemoryWarning() {

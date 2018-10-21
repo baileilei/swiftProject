@@ -5,15 +5,22 @@
 //  Created by g on 2018/10/5.
 //  Copyright © 2018 g. All rights reserved.
 //
+/*
+ 需求：    OC中用宏解决的。
+ 开发阶段：打印log
+ 发布阶段：隐藏log
+ */
 
 import UIKit
+import QorumLogs
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -26,8 +33,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = YYTabBarViewController()
 //        
 //        window?.makeKeyAndVisible()
-       
+       QorumLogs.enabled = true
+//        QorumLogs.minimumLogLevelShown = 3//设置打印级别
+        QorumLogs.onlyShowThisFile("ViewController")//设置只打印某个文件的log
         
+//        QorumLogs.test()
+        QL1("1")
+        QL2("2")
+        QL3("3")
+        QL4("4")
+        QLPlusLine()
+        QLShortLine()
         return true
     }
 
