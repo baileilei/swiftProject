@@ -15,5 +15,7 @@ TODO:
 3.研究contact Search那个控件。
 4.先处理不用pod。 后期再说pod吧。
 
+5.自定义一个patch  打印的，  某个文件打印的patch     开关个性化定制
+
 
 
