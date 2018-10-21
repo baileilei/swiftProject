@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         QLPlusLine()
         QLShortLine()
         
-        flag = false
+//        flag = false
         
 //        print(#file)
 //        print(#function)
@@ -58,15 +58,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    var flag: Bool = false
+//    var flag: Bool = false
     
    
     //泛型函数     T具体是什么类型由调用者来决定
     func YYLog<T>(message:T, fileName:String = #file, methodName:String = #function, lineNumber:Int = #line ) {
         
-        if flag{
+//        if flag{
+//        #if DEBUG
+        #if MYDEBUG
             print("\((fileName as NSString).pathComponents.last!).\(methodName)[\(lineNumber)]:\(message)")
-        }
+        #endif
+//        }
     }
     
      //可传，可不传   函数的默认值------------面试题：函数中的参数是否可以传入默认值？ 接口设计？？？
