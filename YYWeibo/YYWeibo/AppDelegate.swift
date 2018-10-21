@@ -33,9 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = YYTabBarViewController()
 //        
 //        window?.makeKeyAndVisible()
-       QorumLogs.enabled = true
+       QorumLogs.enabled = false
 //        QorumLogs.minimumLogLevelShown = 3//设置打印级别
-        QorumLogs.onlyShowThisFile("ViewController")//设置只打印某个文件的log
+//        QorumLogs.onlyShowThisFile("ViewController")//设置只打印某个文件的log
         
 //        QorumLogs.test()
         QL1("1")
@@ -44,8 +44,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         QL4("4")
         QLPlusLine()
         QLShortLine()
+        
+        
+        print(#file)
+        print(#function)
+        print(#line)
+        YYLog(message: "adb",fileName:"AAA")
+        
+        YYLog(message: 1)
+        YYLog(message: 10.1)
+        YYLog(message: [Int]())
         return true
     }
+    
+   
+    //泛型函数     T具体是什么类型由调用者来决定
+    func YYLog<T>(message:T, fileName:String = #file, methodName:String = #function, lineNumber:Int = #line ) {
+        
+        print("\((fileName as NSString).pathComponents.last!).\(methodName)[\(lineNumber)]:\(message)")
+    }
+    
+     //可传，可不传   函数的默认值------------面试题：函数中的参数是否可以传入默认值？ 接口设计？？？
+//    func YYLog(message:String, fileName:String = #file, methodName:String = #function, lineNumber:Int = #line ) {
+//
+//        print("\((fileName as NSString).pathComponents.last!).\(methodName)[\(lineNumber)]:\(message)")
+//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
