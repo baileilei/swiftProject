@@ -79,6 +79,7 @@
 		063A5F13216E2C6700A4F86F /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A5F02216E2C6700A4F86F /* UIButton+WebCache.m */; };
 		063A5F16216E2D9700A4F86F /* forBridgeFIle.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A5F15216E2D9700A4F86F /* forBridgeFIle.m */; };
 		063A5F19216E2DB500A4F86F /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A5F18216E2DB500A4F86F /* YYViewController.m */; };
+		063F7B06217C82500067A91B /* myStart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063F7B04217C82500067A91B /* myStart.storyboard */; };
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
@@ -220,6 +221,7 @@
 		063A5F15216E2D9700A4F86F /* forBridgeFIle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = forBridgeFIle.m; sourceTree = "<group>"; };
 		063A5F17216E2DB500A4F86F /* YYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewController.h; sourceTree = "<group>"; };
 		063A5F18216E2DB500A4F86F /* YYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYViewController.m; sourceTree = "<group>"; };
+		063F7B05217C82500067A91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/myStart.storyboard; sourceTree = "<group>"; };
 		06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccount.swift; sourceTree = "<group>"; };
 		06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccountVM.swift; sourceTree = "<group>"; };
 		6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,6 +294,7 @@
 				063A5F18216E2DB500A4F86F /* YYViewController.m */,
 				FD2753C2216C5C6E00C160D0 /* NotificationPayloadTest.apns */,
 				FD2753C3216C5C9600C160D0 /* TaskBackup.txt */,
+				063F7B04217C82500067A91B /* myStart.storyboard */,
 				063A5E312166E81B00A4F86F /* Main.storyboard */,
 				063A5E342166E81C00A4F86F /* Assets.xcassets */,
 				063A5E362166E81C00A4F86F /* LaunchScreen.storyboard */,
@@ -729,6 +732,7 @@
 				063A5F05216E2C6700A4F86F /* README.md in Resources */,
 				FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */,
 				063A5EE1216E2C6000A4F86F /* README.md in Resources */,
+				063F7B06217C82500067A91B /* myStart.storyboard in Resources */,
 				063A5E352166E81C00A4F86F /* Assets.xcassets in Resources */,
 				063A5EE2216E2C6000A4F86F /* LICENSE.txt in Resources */,
 				063A5E332166E81B00A4F86F /* Main.storyboard in Resources */,
@@ -908,6 +912,14 @@
 				063A5E372166E81C00A4F86F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		063F7B04217C82500067A91B /* myStart.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063F7B05217C82500067A91B /* Base */,
+			);
+			name = myStart.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

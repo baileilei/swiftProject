@@ -17,15 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let userAccount = YYUserAccount.loadUserAccount()
-        print(userAccount)
-        
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        window?.rootViewController = YYTabBarViewController()
-        
-        window?.makeKeyAndVisible()
+//        let userAccount = YYUserAccount.loadUserAccount()
+//        print(userAccount)
+//        
+//        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        
+//        window?.rootViewController = YYTabBarViewController()
+//        
+//        window?.makeKeyAndVisible()
        
         
         return true
