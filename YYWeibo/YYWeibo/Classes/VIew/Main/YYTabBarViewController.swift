@@ -29,10 +29,13 @@ class YYTabBarViewController: UITabBarController {
         addChildViewController(childController: YYDiscoverViewController(), title: "发现", imageName: "tabbar_discover")
         addChildViewController(childController: YYMessageViewController(), title: "消息", imageName: "tabbar_message_center")
         addChildViewController(childController: YYProfileViewController(), title: "我的", imageName: "tabbar_profile")
+        //命名空间----Swift中如何创建一个类。   如果传一个string， 一个VC的名的话，该怎么初始化控制器呢？
+        //从哪里获取命名空间？？？
+        //swift中是怎么解决{}嵌套的问题？？？  guard守护机制
     
     }
     
-
+//override代表重写父类的方法   Swift支持方法的重载，也就是说只要方法的参数个数或者数据类型不相同，那么系统就会认为两个方法。
     func addChildViewController(childController: UIViewController,title:String,imageName:String) {
         childController.tabBarItem.image = UIImage(named: imageName)
         childController.tabBarItem.title = title;
