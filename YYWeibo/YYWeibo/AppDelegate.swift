@@ -28,11 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        print(userAccount)
 //        
 //        
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        
-//        window?.rootViewController = YYTabBarViewController()
-//        
-//        window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        window?.rootViewController = YYTabBarViewController()
+//
+        window?.makeKeyAndVisible()
        QorumLogs.enabled = false
 //        QorumLogs.minimumLogLevelShown = 3//设置打印级别
 //        QorumLogs.onlyShowThisFile("ViewController")//设置只打印某个文件的log
@@ -50,11 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        print(#file)
 //        print(#function)
 //        print(#line)
-        YYLog(message: "adb",fileName:"AAA")
-        
-        YYLog(message: 1)
-        YYLog(message: 10.1)
-        YYLog(message: [Int]())
+//        YYLog(message: "adb",fileName:"AAA")
+//
+//        YYLog(message: 1)
+//        YYLog(message: 10.1)
+//        YYLog(message: [Int]())
         return true
     }
     
@@ -101,5 +101,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+//泛型函数     T具体是什么类型由调用者来决定 --------------
+func YYLog<T>(message:T, fileName:String = #file, methodName:String = #function, lineNumber:Int = #line ) {
+    
+    //        if flag{
+    //        #if DEBUG
+    #if MYDEBUG
+    print("\((fileName as NSString).pathComponents.last!).\(methodName)[\(lineNumber)]:\(message)")
+    #endif
+    //        }
 }
 
