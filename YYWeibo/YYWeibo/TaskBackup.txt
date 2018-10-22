@@ -13,7 +13,9 @@ TODO:
 1.pod SVProgessHUD    AFNetworking
 2.日文？
 3.研究contact Search那个控件。
-4.先处理不用pod。 后期再说pod吧。
+4.pop怎么使用？
+5.canOpenURL:网络请求怎么处理的？
+6.宏的定义与使用。---------Custom Flag
 
 
 

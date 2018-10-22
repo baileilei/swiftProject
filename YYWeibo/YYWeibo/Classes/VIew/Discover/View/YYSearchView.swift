@@ -9,6 +9,8 @@
 import UIKit
 //把项目中的这个控件嫁接-----职业搜索
 class YYSearchView: UISearchBar {
+    var occupationDataSoure : [String]?
+    
 
     @IBOutlet weak var searchButton: UIButton!
     
@@ -19,9 +21,20 @@ class YYSearchView: UISearchBar {
         print("调了没？？？")
         searchTextFieldRightConstraint.constant = searchButton.width
         
-        let searchVC = PopUpSelectorViewController()
+        let popUp = PopUpSelectorViewController(nibName: "PopUpSelectorViewController", bundle: nil)
+        popUp.delegate = self as! PopUpSelectorViewControllerDelegate
+        popUp.dataSource = occupationDataSoure
+        
+        let popOverVC = UIPopoverController(contentViewController: popUp)
+        popOverVC.contentSize = popUp.view.bounds.size
+        //pop怎么使用？？？
+//        let rect = convert(View.frame, from: Vie)
+//        popOverVC.present(from: <#T##CGRect#>, in: <#T##UIView#>, permittedArrowDirections: <#T##UIPopoverArrowDirection#>, animated: <#T##Bool#>)
+        
         
     }
+    
+    
     
     
     //类方法创建对象
