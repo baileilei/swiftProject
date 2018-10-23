@@ -84,6 +84,7 @@
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
+		FD0BA059217EFFF100229645 /* Main.json in Resources */ = {isa = PBXBuildFile; fileRef = 063F7B07217E28270067A91B /* Main.json */; };
 		FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD2753C3216C5C9600C160D0 /* TaskBackup.txt */; };
 		FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2753C6216C874600C160D0 /* YYOauthViewController.swift */; };
 /* End PBXBuildFile section */
@@ -728,6 +729,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0BA059217EFFF100229645 /* Main.json in Resources */,
 				063A5EC4216E2C5000A4F86F /* LICENSE in Resources */,
 				063A5E7C2169D01800A4F86F /* YYSearchView.xib in Resources */,
 				063F7B09217E28690067A91B /* MainVCSettings.json in Resources */,

@@ -83,7 +83,7 @@ class YYTabBarViewController: UITabBarController {
 
     
     func howToUseTryType() {
-        let path = Bundle.main.path(forResource: "MainVCSettings.json", ofType: nil)
+        let path = Bundle.main.path(forResource: "Main.json", ofType: nil)
         let data = NSData(contentsOfFile: path!)!
         
         do {
