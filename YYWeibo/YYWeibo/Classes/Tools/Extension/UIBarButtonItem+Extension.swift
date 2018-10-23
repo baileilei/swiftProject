@@ -30,8 +30,13 @@ extension UIBarButtonItem{
     @objc func test() ->  Void{
     }
     
+    /*
+     指定构造方法中必须对所有的属性进行初始化
+     便利构造方法中不用对所有的属性进行初始化，因为便利构造方法依赖于指定构造方法
+     一般情况下，如果想给系统的类提供一个快速创建的方法，就自定义一个便利构造方法。
+     */
     convenience init(title: String,target:Any, imageName:String? = nil,action: Selector) {
-        self.init()
+        self.init()//便利构造方法依赖于指定构造方法
         
         let button = UIButton()
         
