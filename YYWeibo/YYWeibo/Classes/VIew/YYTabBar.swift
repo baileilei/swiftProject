@@ -68,7 +68,19 @@ class YYTabBar: UITabBar {
         }
     }
     
-    @objc func buttonClick() {
+    /*
+     public: 最大权限，可以在当前framework和其他framework中访问
+     internal：默认的权限，可以在当前framework中随意访问
+     private: 私有权限 ， 只能在当前文件中访问
+     
+     在企业开发中，建议严格的控制权限，不想让别人访问的东西一定要private
+     */
+    //如果在按钮的监听方法加上private就会报错，报错原因是因为监听事件是由运行循环触发的，而如果该方法是私有的只能在当前类中访问 -------------------------在OC方法前加private进行测试！！！！！！可以测试private的权限控制
+    //而相同的情况在OC中是没有问题，因为OC是动态派发的
+    //而Swift不一样，Swift中所有的东西都是编译时确定的
+    //如果想让swift中的方法也支持动态派发，可以在方法前面加上@objc，
+    //加上@objc就代表告诉系统需要动态派发
+     @objc  func buttonClick() {
         print("yy-block")
         composeBtnClosure?()
     }

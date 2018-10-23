@@ -86,14 +86,14 @@ class YYTabBarViewController: UITabBarController {
         let path = Bundle.main.path(forResource: "Main.json", ofType: nil)
         let data = NSData(contentsOfFile: path!)!
         
-        do {
-            let objc : [[String:Any]]? = try! JSONSerialization.jsonObject(with: data as Data, options: .mutableContainers) as? [[String:Any]]
+        do {//如果没有do{}catch{}   就可以没有try?  或者try!
+        let objc : [[String:Any]]? = try JSONSerialization.jsonObject(with: data as Data, options: .mutableContainers) as? [[String:Any]]
             for dict in objc! {
                 YYLog(message: dict)
                 addChildViewController(childControllerName: dict["vcName"] as? String, title: dict["title"] as? String, imageName: dict["imageName"] as? String)
             }
         } catch {
-            YYLog(message: error)
+//            YYLog(message: error)
         }
         
     }
