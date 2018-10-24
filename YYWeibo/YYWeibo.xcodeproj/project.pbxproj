@@ -81,6 +81,7 @@
 		063A5F19216E2DB500A4F86F /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A5F18216E2DB500A4F86F /* YYViewController.m */; };
 		063F7B06217C82500067A91B /* myStart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063F7B04217C82500067A91B /* myStart.storyboard */; };
 		063F7B09217E28690067A91B /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 063F7B08217E28690067A91B /* MainVCSettings.json */; };
+		063F7B0B2180C2420067A91B /* YYTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F7B0A2180C2420067A91B /* YYTitleButton.swift */; };
 		06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */; };
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
@@ -226,6 +227,7 @@
 		063F7B05217C82500067A91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/myStart.storyboard; sourceTree = "<group>"; };
 		063F7B07217E28270067A91B /* Main.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Main.json; sourceTree = "<group>"; };
 		063F7B08217E28690067A91B /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		063F7B0A2180C2420067A91B /* YYTitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTitleButton.swift; sourceTree = "<group>"; };
 		06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccount.swift; sourceTree = "<group>"; };
 		06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYUserAccountVM.swift; sourceTree = "<group>"; };
 		6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -426,6 +428,7 @@
 			children = (
 				063A5E742169964A00A4F86F /* UIView+Extension.swift */,
 				063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */,
+				063F7B0A2180C2420067A91B /* YYTitleButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -867,6 +870,7 @@
 				063A5F09216E2C6700A4F86F /* SDWebImageDownloader.m in Sources */,
 				063A5E91216A21B400A4F86F /* View+SnapKit.swift in Sources */,
 				FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */,
+				063F7B0B2180C2420067A91B /* YYTitleButton.swift in Sources */,
 				06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */,
 				063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */,
 				063A5E6A2166E9CA00A4F86F /* YYHomeViewController.swift in Sources */,
