@@ -18,6 +18,9 @@ TODO:
 5.自定义一个patch  打印的，  某个文件打印的patch     开关个性化定制
 
 6.定时在APP Store发布版本   ---强制更新。    也有不强制更新的方法。----通过接口！ 服务器内置。
+7.storyBoard
+
+8.将visitorView用XIB绘制。
 
 
 

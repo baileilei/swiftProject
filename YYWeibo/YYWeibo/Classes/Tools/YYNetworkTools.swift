@@ -4,7 +4,9 @@
 //
 //  Created by g on 2018/10/9.
 //  Copyright © 2018 g. All rights reserved.
-//
+/*
+两个 NSNumber对象能否用 == 来判断是否相等？？？    
+ */
 
 import UIKit
 import AFNetworking

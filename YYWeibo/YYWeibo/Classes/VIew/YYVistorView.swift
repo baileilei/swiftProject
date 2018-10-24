@@ -4,7 +4,7 @@
 //
 //  Created by g on 2018/10/7.
 //  Copyright © 2018 g. All rights reserved.
-//
+//    代理和block一般用父子关系的场景       通知一般用于跨层的传递。层级结构较深的场景。
 
 import UIKit
 
@@ -126,6 +126,7 @@ class YYVistorView: UIView {
         animation.toValue = 2 * Double.pi
         animation.repeatCount = 10000.0
         animation.duration = 20
+        //默认情况下只要视图消失(调用viewDidDisappear方法之后)，系统就会自动移除动画
         animation.isRemovedOnCompletion = false
         cycleImageView.layer.add(animation, forKey: nil)//图层上的动画
         

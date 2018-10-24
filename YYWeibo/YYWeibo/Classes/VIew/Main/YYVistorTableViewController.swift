@@ -17,16 +17,27 @@ class YYVistorTableViewController: UITableViewController {
     
     //自定义view视图------面试题：如何自定义控制器的view？
     override func loadView() {
-        if isLogin{
-            super.loadView()
-        }else{
-            vistorView = YYVistorView()
-            vistorView?.loginClosure = {[weak self] in
-                self?.requestLoginOperation()
-            }
-            view = vistorView;
-            setupnavUI()
+//        if isLogin{
+//            super.loadView()
+//        }else{
+//            vistorView = YYVistorView()
+//            vistorView?.loginClosure = {[weak self] in
+//                self?.requestLoginOperation()
+//            }
+//            view = vistorView;
+//            setupnavUI()
+//        }
+        
+        isLogin ? super.loadView() : setupVistorView()
+    }
+    
+    func setupVistorView() {
+        vistorView = YYVistorView()
+        vistorView?.loginClosure = {[weak self] in
+            self?.requestLoginOperation()
         }
+        view = vistorView;
+        setupnavUI()
     }
     
     override func viewDidLoad() {
