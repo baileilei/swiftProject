@@ -14,11 +14,16 @@ class YYHomeViewController: YYVistorTableViewController {
         super.viewDidLoad()
         
         if isLogin {
-            
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", target: self, imageName: "navigationbar_friendattention", action: #selector(swipe))
+            navigationItem.rightBarButtonItem =  UIBarButtonItem(title: "", target: self, imageName: "navigationbar_pop", action: #selector(swipe))
         }else{
             vistorView?.updateVisitorInfo(message: nil, imageName: nil)
         }
         
+    }
+    
+    @objc func swipe() {
+        YYLog(message: "")
     }
 
 
