@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06136B922182170E00AB2873 /* NULL.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B912182170E00AB2873 /* NULL.storyboard */; };
+		06136B942182188300AB2873 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B932182188300AB2873 /* home.storyboard */; };
+		06136B962182189400AB2873 /* discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B952182189400AB2873 /* discover.storyboard */; };
+		06136B98218218A600AB2873 /* message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B97218218A600AB2873 /* message.storyboard */; };
+		06136B9A218218B700AB2873 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B99218218B700AB2873 /* profile.storyboard */; };
 		063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2D2166E81B00A4F86F /* AppDelegate.swift */; };
 		063A5E302166E81B00A4F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2F2166E81B00A4F86F /* ViewController.swift */; };
 		063A5E332166E81B00A4F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E312166E81B00A4F86F /* Main.storyboard */; };
@@ -109,6 +114,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06136B912182170E00AB2873 /* NULL.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NULL.storyboard; sourceTree = "<group>"; };
+		06136B932182188300AB2873 /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		06136B952182189400AB2873 /* discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = discover.storyboard; sourceTree = "<group>"; };
+		06136B97218218A600AB2873 /* message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = message.storyboard; sourceTree = "<group>"; };
+		06136B99218218B700AB2873 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		063A5E2A2166E81B00A4F86F /* YYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A5E2D2166E81B00A4F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063A5E2F2166E81B00A4F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -298,6 +308,7 @@
 				063A5E2F2166E81B00A4F86F /* ViewController.swift */,
 				063A5F14216E2D9700A4F86F /* forBridgeFIle.h */,
 				063A5F15216E2D9700A4F86F /* forBridgeFIle.m */,
+				06136B912182170E00AB2873 /* NULL.storyboard */,
 				063A5F17216E2DB500A4F86F /* YYViewController.h */,
 				063A5F18216E2DB500A4F86F /* YYViewController.m */,
 				FD2753C2216C5C6E00C160D0 /* NotificationPayloadTest.apns */,
@@ -386,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				063A5E692166E9CA00A4F86F /* YYHomeViewController.swift */,
+				06136B932182188300AB2873 /* home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -395,6 +407,7 @@
 			children = (
 				063A5E782169CF9C00A4F86F /* View */,
 				063A5E6B2166E9D800A4F86F /* YYDiscoverViewController.swift */,
+				06136B952182189400AB2873 /* discover.storyboard */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -403,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				063A5E6D2166E9E300A4F86F /* YYMessageViewController.swift */,
+				06136B97218218A600AB2873 /* message.storyboard */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -411,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				063A5E6F2166E9F000A4F86F /* YYProfileViewController.swift */,
+				06136B99218218B700AB2873 /* profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -735,7 +750,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06136B9A218218B700AB2873 /* profile.storyboard in Resources */,
 				FD0BA059217EFFF100229645 /* Main.json in Resources */,
+				06136B922182170E00AB2873 /* NULL.storyboard in Resources */,
+				06136B98218218A600AB2873 /* message.storyboard in Resources */,
 				063A5EC4216E2C5000A4F86F /* LICENSE in Resources */,
 				063A5E7C2169D01800A4F86F /* YYSearchView.xib in Resources */,
 				063F7B09217E28690067A91B /* MainVCSettings.json in Resources */,
@@ -745,8 +763,10 @@
 				063A5EC5216E2C5000A4F86F /* README.md in Resources */,
 				063A5F04216E2C6700A4F86F /* LICENSE in Resources */,
 				063A5F05216E2C6700A4F86F /* README.md in Resources */,
+				06136B962182189400AB2873 /* discover.storyboard in Resources */,
 				FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */,
 				063A5EE1216E2C6000A4F86F /* README.md in Resources */,
+				06136B942182188300AB2873 /* home.storyboard in Resources */,
 				063F7B06217C82500067A91B /* myStart.storyboard in Resources */,
 				063A5E352166E81C00A4F86F /* Assets.xcassets in Resources */,
 				063A5EE2216E2C6000A4F86F /* LICENSE.txt in Resources */,

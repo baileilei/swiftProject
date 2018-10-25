@@ -23,7 +23,7 @@
 	<key>NSAppTransportSecurity</key>
 	<dict/>
 	<key>UIMainStoryboardFile</key>
-	<string>myStart</string>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

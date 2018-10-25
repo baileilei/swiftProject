@@ -21,8 +21,9 @@
                     <connections>
                         <segue destination="PKe-Wl-f7r" kind="relationship" relationship="viewControllers" id="BDO-4D-S7V"/>
                         <segue destination="buL-KV-Jub" kind="relationship" relationship="viewControllers" id="DaS-83-cGx"/>
-                        <segue destination="KHv-Nb-06O" kind="relationship" relationship="viewControllers" id="PeK-Qo-37t"/>
-                        <segue destination="OTp-CC-21r" kind="relationship" relationship="viewControllers" id="X4u-jh-Lz8"/>
+                        <segue destination="UUh-4I-oHG" kind="relationship" relationship="viewControllers" id="fTb-su-jsX"/>
+                        <segue destination="KHv-Nb-06O" kind="relationship" relationship="viewControllers" id="bif-3k-hPf"/>
+                        <segue destination="OTp-CC-21r" kind="relationship" relationship="viewControllers" id="X4n-5y-Qy9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEs-Mr-ZgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -46,7 +47,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ypm-7q-se5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488.80000000000001" y="-187.55622188905548"/>
+            <point key="canvasLocation" x="476" y="-260"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="ucc-IS-mlZ">
@@ -95,6 +96,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ua-cP-66p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="488.80000000000001" y="476.31184407796104"/>
+        </scene>
+        <!--NULL-->
+        <scene sceneID="J0a-4A-ymr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NULL" id="UUh-4I-oHG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Z85-q6-hRl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35D-fo-tgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="878"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="8Th-sb-VQq">
@@ -152,7 +163,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4OB-Mq-j7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1378" y="1210"/>
+            <point key="canvasLocation" x="1342" y="1412"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="xud-J6-iZm">
@@ -215,7 +226,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4G-ok-7cs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="508" y="1149"/>
+            <point key="canvasLocation" x="476" y="1336"/>
         </scene>
     </scenes>
 </document>

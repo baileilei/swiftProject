@@ -15,7 +15,7 @@ class YYMessageViewController: YYVistorTableViewController {
 
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录")
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")//该逻辑抽到了父类
-        
+        title = "消息"
         if isLogin {
             
         } else {
