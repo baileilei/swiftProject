@@ -40,10 +40,12 @@
             </objects>
             <point key="canvasLocation" x="374" y="179"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--消息-->
         <scene sceneID="qv3-zJ-8cf">
             <objects>
                 <navigationController id="ivk-xj-coh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message_center" selectedImage="tabbar_message_center_selected" id="Z3M-E4-0um"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NzX-MU-qaY">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -57,4 +59,8 @@
             <point key="canvasLocation" x="-578" y="179"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tabbar_message_center" width="30" height="30"/>
+        <image name="tabbar_message_center_selected" width="30" height="30"/>
+    </resources>
 </document>

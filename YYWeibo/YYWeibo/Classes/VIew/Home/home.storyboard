@@ -38,10 +38,12 @@
             </objects>
             <point key="canvasLocation" x="596" y="-122"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--首页-->
         <scene sceneID="BTd-4k-ghB">
             <objects>
                 <navigationController id="giV-SM-Elf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="tabbar_home" id="IDu-cJ-YFC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eSb-Zp-jsF">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -55,4 +57,7 @@
             <point key="canvasLocation" x="-357" y="-122"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tabbar_home" width="30" height="30"/>
+    </resources>
 </document>
