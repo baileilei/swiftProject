@@ -86,6 +86,7 @@
 		06AB4FE52171A68400C7B631 /* YYUserAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4FE42171A68400C7B631 /* YYUserAccountVM.swift */; };
 		8C34256BB19CC77FB9B8E734 /* Pods_YYWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD7E7E39F3824BDE6E12D6 /* Pods_YYWeibo.framework */; };
 		FD0BA059217EFFF100229645 /* Main.json in Resources */ = {isa = PBXBuildFile; fileRef = 063F7B07217E28270067A91B /* Main.json */; };
+		FD0BA05E21815DA500229645 /* YYVistorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD0BA05D21815DA500229645 /* YYVistorView.xib */; };
 		FD2753C4216C5C9600C160D0 /* TaskBackup.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD2753C3216C5C9600C160D0 /* TaskBackup.txt */; };
 		FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2753C6216C874600C160D0 /* YYOauthViewController.swift */; };
 /* End PBXBuildFile section */
@@ -235,6 +236,7 @@
 		A02A1A1A790501DF470AED82 /* Pods_YYWeiboTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYWeiboTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE12EEE2422B39EC8CB70E29 /* Pods-YYWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYWeibo/Pods-YYWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		EA48132953DDCD55CE93C63E /* Pods-YYWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYWeibo/Pods-YYWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		FD0BA05D21815DA500229645 /* YYVistorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYVistorView.xib; sourceTree = "<group>"; };
 		FD2753C2216C5C6E00C160D0 /* NotificationPayloadTest.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayloadTest.apns; sourceTree = "<group>"; };
 		FD2753C3216C5C9600C160D0 /* TaskBackup.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TaskBackup.txt; sourceTree = "<group>"; };
 		FD2753C6216C874600C160D0 /* YYOauthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYOauthViewController.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				063A5E662166E97D00A4F86F /* Main */,
 				063A5E7121698D0400A4F86F /* YYTabBar.swift */,
 				063A5E7F216A151F00A4F86F /* YYVistorView.swift */,
+				FD0BA05D21815DA500229645 /* YYVistorView.xib */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -737,6 +740,7 @@
 				063A5E7C2169D01800A4F86F /* YYSearchView.xib in Resources */,
 				063F7B09217E28690067A91B /* MainVCSettings.json in Resources */,
 				063A5E382166E81C00A4F86F /* LaunchScreen.storyboard in Resources */,
+				FD0BA05E21815DA500229645 /* YYVistorView.xib in Resources */,
 				063A5EE0216E2C6000A4F86F /* SVProgressHUD.bundle in Resources */,
 				063A5EC5216E2C5000A4F86F /* README.md in Resources */,
 				063A5F04216E2C6700A4F86F /* LICENSE in Resources */,
