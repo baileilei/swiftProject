@@ -10,6 +10,12 @@ import UIKit
 
 class YYVistorView: UIView {
     
+    class func getYYVisitorView()->YYVistorView{
+    
+        return Bundle.main.loadNibNamed("YYVistorView", owner: nil, options: nil)?.last as! YYVistorView
+    
+    }
+    
     var loginClosure: (()->())?
     
     
@@ -56,15 +62,15 @@ class YYVistorView: UIView {
         return button
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setupUI()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//
+//        setupUI()
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     
     private func setupUI(){
         backgroundColor = UIColor(white: 237/255, alpha: 1)
