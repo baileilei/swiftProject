@@ -22,5 +22,8 @@ TODO:
 
 8.将visitorView用XIB绘制。
 
+9.转场动画，containerView----容器视图
+    presentedView()----------该方法能拿到容器视图中的第一子视图。
+
 
 
