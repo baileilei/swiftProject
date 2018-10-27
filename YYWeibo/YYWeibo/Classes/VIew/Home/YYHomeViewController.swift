@@ -43,6 +43,15 @@ class YYHomeViewController: YYVistorTableViewController {
         YYLog(message: "haha")
         btn.isSelected = !btn.isSelected
         
+        let sb = UIStoryboard(name: "Popover", bundle: nil)
+        guard let popVC = sb.instantiateInitialViewController() else {
+            return
+        }
+        
+        popVC.transitioningDelegate = self as! UIViewControllerTransitioningDelegate
+        popVC.modalPresentationStyle = UIModalPresentationStyle.custom
+        
+        present(popVC, animated: false, completion: nil)
         
     }
     
@@ -51,4 +60,18 @@ class YYHomeViewController: YYVistorTableViewController {
     }
 
 
+}
+
+extension YYHomeViewController : UIViewControllerTransitioningDelegate{
+    
+//    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+//        <#code#>
+//    }(<#parameters#>) -> <#return type#> {
+//        <#function body#>
+//    }
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+//        return presentationController(forPresented:presenting:source:)
+        return YYPresentationController(presentedViewController:presented , presenting: presenting)
+    }
+    
 }
