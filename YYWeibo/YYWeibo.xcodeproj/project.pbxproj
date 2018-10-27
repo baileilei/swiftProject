@@ -14,6 +14,7 @@
 		06136B9A218218B700AB2873 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B99218218B700AB2873 /* profile.storyboard */; };
 		06136B9C2184016C00AB2873 /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B9B2184016C00AB2873 /* Popover.storyboard */; };
 		06136B9E2184048A00AB2873 /* YYPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136B9D2184048A00AB2873 /* YYPresentationController.swift */; };
+		06136BA02184361F00AB2873 /* popViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136B9F2184361F00AB2873 /* popViewController.swift */; };
 		063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2D2166E81B00A4F86F /* AppDelegate.swift */; };
 		063A5E302166E81B00A4F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2F2166E81B00A4F86F /* ViewController.swift */; };
 		063A5E332166E81B00A4F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E312166E81B00A4F86F /* Main.storyboard */; };
@@ -123,6 +124,7 @@
 		06136B99218218B700AB2873 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		06136B9B2184016C00AB2873 /* Popover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
 		06136B9D2184048A00AB2873 /* YYPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYPresentationController.swift; sourceTree = "<group>"; };
+		06136B9F2184361F00AB2873 /* popViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popViewController.swift; sourceTree = "<group>"; };
 		063A5E2A2166E81B00A4F86F /* YYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A5E2D2166E81B00A4F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063A5E2F2166E81B00A4F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 				063A5E692166E9CA00A4F86F /* YYHomeViewController.swift */,
 				06136B9D2184048A00AB2873 /* YYPresentationController.swift */,
 				06136B9B2184016C00AB2873 /* Popover.storyboard */,
+				06136B9F2184361F00AB2873 /* popViewController.swift */,
 				06136B932182188300AB2873 /* home.storyboard */,
 			);
 			path = Home;
@@ -855,6 +858,7 @@
 				063A5ECD216E2C5000A4F86F /* AFAutoPurgingImageCache.m in Sources */,
 				063A5ED2216E2C5000A4F86F /* AFURLRequestSerialization.m in Sources */,
 				063A5E302166E81B00A4F86F /* ViewController.swift in Sources */,
+				06136BA02184361F00AB2873 /* popViewController.swift in Sources */,
 				063A5F10216E2C6700A4F86F /* NSData+ImageContentType.m in Sources */,
 				06136B9E2184048A00AB2873 /* YYPresentationController.swift in Sources */,
 				063A5E99216A21B400A4F86F /* Constraint.swift in Sources */,

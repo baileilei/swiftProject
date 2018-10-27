@@ -48,7 +48,7 @@ class YYHomeViewController: YYVistorTableViewController {
             return
         }
         
-        popVC.transitioningDelegate = self as! UIViewControllerTransitioningDelegate
+        popVC.transitioningDelegate = self as UIViewControllerTransitioningDelegate
         popVC.modalPresentationStyle = UIModalPresentationStyle.custom
         
         present(popVC, animated: false, completion: nil)
@@ -72,13 +72,13 @@ extension YYHomeViewController : UIViewControllerTransitioningDelegate{
     
     //该方法用于返回一个负责转场如何出现的对象
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning?{
-        return self as! UIViewControllerAnimatedTransitioning
+        return self as UIViewControllerAnimatedTransitioning
     }
     
     //该方法用于返回一个负责转场如何消失的对象
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning?{
         
-        return self as! UIViewControllerAnimatedTransitioning
+        return self as UIViewControllerAnimatedTransitioning
     }
 }
 
@@ -94,28 +94,30 @@ extension YYHomeViewController : UIViewControllerAnimatedTransitioning{
      */
     //transitionContext： 所有动画需要的东西都保存在上下文中， 换而言之，就是可以通过transitionContext获取都我们所关注的视图等。
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
-        let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)
-        YYLog(message: toVC)
-        YYLog(message: fromVC)
-        
-        //将需要弹出的视图添加到containerView上
-        guard let toView = transitionContext.view(forKey: UITransitionContextViewKey.to) else {
-            return
-        }
-        
-//        toView.transform = cgaffinetransform(glScalef(<#T##x: GLfloat##GLfloat#>, <#T##y: GLfloat##GLfloat#>, <#T##z: GLfloat##GLfloat#>))
-        toView.transform = CGAffineTransform(scaleX: 1.0,y: 0.0)
-        toView.layer.anchorPoint = CGPoint(x: 0.5, y: 0.0)
-        //面试题: layer的锚点怎么用的。
-//       UIView.animate(withDuration: <#T##TimeInterval#>, delay: <#T##TimeInterval#>, usingSpringWithDamping: <#T##CGFloat#>, initialSpringVelocity: <#T##CGFloat#>, options: <#T##UIViewAnimationOptions#>, animations: <#T##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
-        
-        UIView.animate(withDuration: 10.0, delay: 0, options: .allowAnimatedContent, animations: {
-            toView.transform = CGAffineTransform.identity
-            
-        }) { (_) in
-            transitionContext.completeTransition(true)
-        }
+//        let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
+//        let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)
+//        YYLog(message: toVC)
+//        YYLog(message: fromVC)
+//        
+//        //将需要弹出的视图添加到containerView上
+//        guard let toView = transitionContext.view(forKey: UITransitionContextViewKey.to) else {
+//            return
+//        }
+//        
+////        toView.transform = cgaffinetransform(glScalef(<#T##x: GLfloat##GLfloat#>, <#T##y: GLfloat##GLfloat#>, <#T##z: GLfloat##GLfloat#>))
+//        toView.transform = CGAffineTransform(scaleX: 1.0,y: 0.0)
+////        toView.layer.anchorPoint = CGPoint(x: 0.5, y: 0.0)
+//        //面试题: layer的锚点怎么用的。
+////       UIView.animate(withDuration: <#T##TimeInterval#>, delay: <#T##TimeInterval#>, usingSpringWithDamping: <#T##CGFloat#>, initialSpringVelocity: <#T##CGFloat#>, options: <#T##UIViewAnimationOptions#>, animations: <#T##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+//        
+//        
+//        
+//        UIView.animate(withDuration: 10.0, delay: 0, options: .allowAnimatedContent, animations: {
+//            toView.transform = CGAffineTransform.identity
+//            
+//        }) { (_) in
+//            transitionContext.completeTransition(true)
+//        }
     }
     
     
