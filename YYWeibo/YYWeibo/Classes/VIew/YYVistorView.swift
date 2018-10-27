@@ -137,7 +137,14 @@ class YYVistorView: UIView {
         cycleImageView.layer.add(animation, forKey: nil)//图层上的动画
         
     }
+//    @IBOutlet weak var loginAction: UIButton!
+//    @IBAction func loginAction(_ sender: Any) {
+//    }
     
+    @IBAction func logicClickAction(_ sender: Any) {
+        YYLog(message: "it is difference")
+    }
+    @IBOutlet weak var loginbtnClick: UIButton!
     @objc func loginAction(){
         loginClosure?()
     }
