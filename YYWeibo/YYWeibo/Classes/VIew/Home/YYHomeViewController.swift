@@ -36,6 +36,9 @@ class YYHomeViewController: YYVistorTableViewController {
         titleBtn.sizeToFit()
         titleBtn.addTarget(self, action: #selector(titleBtnClick), for: .touchUpInside)
         navigationItem.titleView = titleBtn
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", target: self, imageName: "navigationbar_friendattention", action: #selector(swipe))
+        navigationItem.rightBarButtonItem =  UIBarButtonItem(title: "", target: self, imageName: "navigationbar_pop", action: #selector(swipe))
 
     }
     
@@ -57,6 +60,12 @@ class YYHomeViewController: YYVistorTableViewController {
     
     @objc func swipe() {
         YYLog(message: "")
+        let sb = UIStoryboard(name: "QRcode", bundle: nil)
+        let qrCodeVC = sb.instantiateInitialViewController()!
+        
+        present(qrCodeVC, animated: true, completion: nil)
+        
+        
     }
 
 
