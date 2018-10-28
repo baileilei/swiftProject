@@ -25,5 +25,8 @@ TODO:
 9.转场动画，containerView----容器视图
     presentedView()----------该方法能拿到容器视图中的第一子视图。
 
+10.整理每个模块到每个分支上， 每个模块最好尽量用StoryBoard和code两个方面完成。    以及swift&OC
+    -------整理每个commit。
+
 
 
