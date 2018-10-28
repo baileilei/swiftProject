@@ -9,30 +9,34 @@
 import UIKit
 
 class QRCodeViewController: UIViewController {
-
+    @IBOutlet weak var contentViewHeightCons: NSLayoutConstraint!
+    
+    @IBOutlet weak var scanView: UIImageView!
+    @IBOutlet weak var scanlineTopCons: NSLayoutConstraint!
     @IBOutlet weak var customTabbar: UITabBar!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         customTabbar.selectedItem = customTabbar.items?.first
-        // Do any additional setup after loading the view.
+        customTabbar.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        startAnimation()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func startAnimation(){
+        scanlineTopCons.constant = -300
+        view.layoutIfNeeded()
+        
+        UIView.animate(withDuration: 1.0) {
+            UIView.setAnimationRepeatCount(Float(CGFloat.greatestFiniteMagnitude))
+            self.scanlineTopCons.constant = 300
+            self.view.layoutIfNeeded()
+        }
     }
-    */
 
 
     @IBAction func closeItemClick(_ sender: Any) {
@@ -40,4 +44,16 @@ class QRCodeViewController: UIViewController {
     }
     @IBAction func photoItemClick(_ sender: Any) {
     }
+}
+
+extension QRCodeViewController : UITabBarDelegate {
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        contentViewHeightCons.constant = (item.tag == 1) ? 150 : 300;
+        
+//        view.removea
+        scanView.layer.removeAllAnimations()
+        
+        startAnimation()
+    }
+    
 }
