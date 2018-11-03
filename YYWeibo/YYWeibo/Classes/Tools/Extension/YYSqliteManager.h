@@ -14,4 +14,6 @@
 
 -(BOOL)openDB;
 
+-(BOOL)execSQL:(NSString *)sql;
+
 @end
