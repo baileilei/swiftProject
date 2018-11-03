@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class QRCodeViewController: UIViewController {
     @IBOutlet weak var contentViewHeightCons: NSLayoutConstraint!
     
     @IBOutlet weak var scanView: UIImageView!
+    @IBOutlet weak var contentLable: UILabel!
     @IBOutlet weak var scanlineTopCons: NSLayoutConstraint!
     @IBOutlet weak var customTabbar: UITabBar!
     override func viewDidLoad() {
@@ -19,6 +21,8 @@ class QRCodeViewController: UIViewController {
 
         customTabbar.selectedItem = customTabbar.items?.first
         customTabbar.delegate = self
+        
+        scanQRCode()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -37,12 +41,53 @@ class QRCodeViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
+    
+    private func scanQRCode(){
+        if !session.canAddInput(input!) {
+            return
+        }
+        
+        if !session.canAddOutput(output) {
+            return
+        }
+        
+        session.addInput(input!)
+        session.addOutput(output)
+        
+        output.metadataObjectTypes = output.availableMetadataObjectTypes
+        
+        output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+        
+        view.layer.insertSublayer(previewLayer, at: 0)
+        previewLayer.frame = view.bounds
+        
+        session.startRunning()
+    }
 
 
     @IBAction func closeItemClick(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func photoItemClick(_ sender: Any) {
+    }
+    
+    private lazy var input: AVCaptureDeviceInput? = {
+        let device = AVCaptureDevice.default(for: AVMediaType.video)
+        return try? AVCaptureDeviceInput(device: device!)
+    }()
+    
+    private lazy var session : AVCaptureSession = AVCaptureSession()
+    
+    private lazy var output : AVCaptureMetadataOutput = AVCaptureMetadataOutput()
+    private lazy var previewLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.session)
+}
+
+extension QRCodeViewController : AVCaptureMetadataOutputObjectsDelegate{
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        print("----" + (metadataObjects.last?.accessibilityValue)!)
+//        metadataObjects.last.
+        print(metadataObjects.last ?? "=====")
+        self.contentLable.text = metadataObjects.last as? String
     }
 }
 

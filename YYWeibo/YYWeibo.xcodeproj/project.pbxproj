@@ -17,6 +17,7 @@
 		06136BA02184361F00AB2873 /* popViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136B9F2184361F00AB2873 /* popViewController.swift */; };
 		06136BA32184A83C00AB2873 /* QRcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136BA22184A83C00AB2873 /* QRcode.storyboard */; };
 		06136BA52184AE6C00AB2873 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BA42184AE6C00AB2873 /* QRCodeViewController.swift */; };
+		06136BA8218D8F6900AB2873 /* YYSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BA7218D8F6900AB2873 /* YYSqliteManager.m */; };
 		063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2D2166E81B00A4F86F /* AppDelegate.swift */; };
 		063A5E302166E81B00A4F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2F2166E81B00A4F86F /* ViewController.swift */; };
 		063A5E332166E81B00A4F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E312166E81B00A4F86F /* Main.storyboard */; };
@@ -129,6 +130,8 @@
 		06136B9F2184361F00AB2873 /* popViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popViewController.swift; sourceTree = "<group>"; };
 		06136BA22184A83C00AB2873 /* QRcode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRcode.storyboard; sourceTree = "<group>"; };
 		06136BA42184AE6C00AB2873 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		06136BA6218D8F6900AB2873 /* YYSqliteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSqliteManager.h; sourceTree = "<group>"; };
+		06136BA7218D8F6900AB2873 /* YYSqliteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSqliteManager.m; sourceTree = "<group>"; };
 		063A5E2A2166E81B00A4F86F /* YYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A5E2D2166E81B00A4F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063A5E2F2166E81B00A4F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -470,6 +473,8 @@
 				063A5E742169964A00A4F86F /* UIView+Extension.swift */,
 				063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */,
 				063F7B0A2180C2420067A91B /* YYTitleButton.swift */,
+				06136BA6218D8F6900AB2873 /* YYSqliteManager.h */,
+				06136BA7218D8F6900AB2873 /* YYSqliteManager.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -905,6 +910,7 @@
 				063A5E97216A21B400A4F86F /* ConstraintRelation.swift in Sources */,
 				063A5ED1216E2C5000A4F86F /* AFURLSessionManager.m in Sources */,
 				063A5F07216E2C6700A4F86F /* SDWebImageDecoder.m in Sources */,
+				06136BA8218D8F6900AB2873 /* YYSqliteManager.m in Sources */,
 				063A5E90216A21B400A4F86F /* ViewController+SnapKit.swift in Sources */,
 				063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */,
 				063A5ED4216E2C5000A4F86F /* AFSecurityPolicy.m in Sources */,
@@ -1111,7 +1117,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KA54YR925;
 				INFOPLIST_FILE = YYWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1123,8 +1131,9 @@
 					"-all_load",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D MYDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = yy.YYWeibo;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.yy.YYWeibo.aaaa.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1136,7 +1145,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KA54YR925;
 				INFOPLIST_FILE = YYWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1147,8 +1158,9 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yy.YYWeibo;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.yy.YYWeibo.aaaa.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

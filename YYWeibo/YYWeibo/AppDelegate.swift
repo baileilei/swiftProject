@@ -33,6 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = YYTabBarViewController()
 //
 //        window?.makeKeyAndVisible()
+        
+        
        QorumLogs.enabled = false
 //        QorumLogs.minimumLogLevelShown = 3//设置打印级别
 //        QorumLogs.onlyShowThisFile("ViewController")//设置只打印某个文件的log
