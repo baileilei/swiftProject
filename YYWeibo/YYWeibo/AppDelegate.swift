@@ -33,7 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = YYTabBarViewController()
 //
 //        window?.makeKeyAndVisible()
-        
+       let flag = YYSqliteManager.shareInstance().openDB()
+        if (flag){
+            YYLog(message: "打开成功")
+        }
         
        QorumLogs.enabled = false
 //        QorumLogs.minimumLogLevelShown = 3//设置打印级别

@@ -38,7 +38,7 @@ static id _instance;
         NSLog(@"打开数据库失败");
         return NO;
     } ;
-    return NO;
+    return [self createTable];
 }
 
 -(BOOL)createTable{
