@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "YYStudent.h"
-#import "YYWeibo-Swift.h"
+
 
 @interface YYSqliteMangaerUnitTest : XCTestCase
 
@@ -34,6 +34,12 @@
     stu.age = 28;
     
     [stu insertStudent];
+    
+    
+}
+
+-(void)testQUeryExample{
+    NSString *querySQL = @"SELECT * FROM t_student ORDER BY ID DESC;";
     
     
 }

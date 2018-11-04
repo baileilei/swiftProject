@@ -16,4 +16,8 @@
 
 -(void)insertStudent;
 
+-(id)queryStudentWithSQL:(NSString *)querySql;
+
+-(void)updateStuWithSQL:(NSString *)updateSql;
+
 @end
