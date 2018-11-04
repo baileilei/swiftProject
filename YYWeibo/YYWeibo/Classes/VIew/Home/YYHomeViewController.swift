@@ -60,11 +60,14 @@ class YYHomeViewController: YYVistorTableViewController {
     
     @objc func swipe() {
         YYLog(message: "")
+
+        let nav = UINavigationController(rootViewController: YYVistorTableViewController())
+        present(nav, animated: false, completion: nil)
+
         let sb = UIStoryboard(name: "QRcode", bundle: nil)
         let qrCodeVC = sb.instantiateInitialViewController()!
         
         present(qrCodeVC, animated: true, completion: nil)
-        
         
     }
 

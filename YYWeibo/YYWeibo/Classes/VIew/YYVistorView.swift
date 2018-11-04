@@ -62,15 +62,22 @@ class YYVistorView: UIView {
         return button
     }()
     
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//
-//        setupUI()
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+
+    
+    class func shareVistorView() -> YYVistorView? {
+        return Bundle.main.loadNibNamed("YYVistorView", owner: nil, options: [:])?.last as? YYVistorView
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setupUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     
     private func setupUI(){
         backgroundColor = UIColor(white: 237/255, alpha: 1)
