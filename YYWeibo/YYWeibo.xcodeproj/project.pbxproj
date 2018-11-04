@@ -20,6 +20,12 @@
 		06136BA8218D8F6900AB2873 /* YYSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BA7218D8F6900AB2873 /* YYSqliteManager.m */; };
 		06136BAC218DE58000AB2873 /* YYSqliteMangaerUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BAB218DE58000AB2873 /* YYSqliteMangaerUnitTest.m */; };
 		06136BAF218DE88300AB2873 /* YYStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BAE218DE88300AB2873 /* YYStudent.m */; };
+		06136BB1218DED2F00AB2873 /* YYSqliteManagerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BB0218DED2F00AB2873 /* YYSqliteManagerSwift.swift */; };
+		06136BBE218E82D100AB2873 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BB4218E82D100AB2873 /* FMDatabaseQueue.m */; };
+		06136BBF218E82D100AB2873 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BB7218E82D100AB2873 /* FMDatabaseAdditions.m */; };
+		06136BC0218E82D100AB2873 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BB8218E82D100AB2873 /* FMDatabase.m */; };
+		06136BC1218E82D100AB2873 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BBC218E82D100AB2873 /* FMDatabasePool.m */; };
+		06136BC2218E82D100AB2873 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BBD218E82D100AB2873 /* FMResultSet.m */; };
 		063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2D2166E81B00A4F86F /* AppDelegate.swift */; };
 		063A5E302166E81B00A4F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2F2166E81B00A4F86F /* ViewController.swift */; };
 		063A5E332166E81B00A4F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E312166E81B00A4F86F /* Main.storyboard */; };
@@ -139,6 +145,18 @@
 		06136BAB218DE58000AB2873 /* YYSqliteMangaerUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSqliteMangaerUnitTest.m; sourceTree = "<group>"; };
 		06136BAD218DE88300AB2873 /* YYStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYStudent.h; sourceTree = "<group>"; };
 		06136BAE218DE88300AB2873 /* YYStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYStudent.m; sourceTree = "<group>"; };
+		06136BB0218DED2F00AB2873 /* YYSqliteManagerSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSqliteManagerSwift.swift; sourceTree = "<group>"; };
+		06136BB3218E82D100AB2873 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		06136BB4218E82D100AB2873 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		06136BB5218E82D100AB2873 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		06136BB6218E82D100AB2873 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		06136BB7218E82D100AB2873 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		06136BB8218E82D100AB2873 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		06136BB9218E82D100AB2873 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		06136BBA218E82D100AB2873 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		06136BBB218E82D100AB2873 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		06136BBC218E82D100AB2873 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		06136BBD218E82D100AB2873 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		063A5E2A2166E81B00A4F86F /* YYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A5E2D2166E81B00A4F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063A5E2F2166E81B00A4F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -305,6 +323,24 @@
 				06136BA42184AE6C00AB2873 /* QRCodeViewController.swift */,
 			);
 			path = QRcode;
+			sourceTree = "<group>";
+		};
+		06136BB2218E82D100AB2873 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				06136BB3218E82D100AB2873 /* FMDatabase.h */,
+				06136BB4218E82D100AB2873 /* FMDatabaseQueue.m */,
+				06136BB5218E82D100AB2873 /* FMResultSet.h */,
+				06136BB6218E82D100AB2873 /* FMDatabasePool.h */,
+				06136BB7218E82D100AB2873 /* FMDatabaseAdditions.m */,
+				06136BB8218E82D100AB2873 /* FMDatabase.m */,
+				06136BB9218E82D100AB2873 /* FMDatabaseQueue.h */,
+				06136BBA218E82D100AB2873 /* FMDB.h */,
+				06136BBB218E82D100AB2873 /* FMDatabaseAdditions.h */,
+				06136BBC218E82D100AB2873 /* FMDatabasePool.m */,
+				06136BBD218E82D100AB2873 /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 		063A5E212166E81B00A4F86F = {
@@ -487,6 +523,7 @@
 				063F7B0A2180C2420067A91B /* YYTitleButton.swift */,
 				06136BA6218D8F6900AB2873 /* YYSqliteManager.h */,
 				06136BA7218D8F6900AB2873 /* YYSqliteManager.m */,
+				06136BB0218DED2F00AB2873 /* YYSqliteManagerSwift.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -503,6 +540,7 @@
 		063A5E81216A21AB00A4F86F /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				06136BB2218E82D100AB2873 /* fmdb */,
 				063A5EE3216E2C6700A4F86F /* SDWebImage */,
 				063A5ED5216E2C5F00A4F86F /* SVProgressHUD */,
 				063A5E9E216E2C4F00A4F86F /* AFNetworking */,
@@ -860,12 +898,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YYWeibo/Pods-YYWeibo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/QorumLogs/QorumLogs.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QorumLogs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
@@ -882,9 +922,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				063A5EC9216E2C5000A4F86F /* UIImageView+AFNetworking.m in Sources */,
+				06136BB1218DED2F00AB2873 /* YYSqliteManagerSwift.swift in Sources */,
 				063A5ED0216E2C5000A4F86F /* AFHTTPSessionManager.m in Sources */,
 				063A5EC6216E2C5000A4F86F /* UIProgressView+AFNetworking.m in Sources */,
 				063A5EC7216E2C5000A4F86F /* UIRefreshControl+AFNetworking.m in Sources */,
+				06136BC1218E82D100AB2873 /* FMDatabasePool.m in Sources */,
 				063A5ECB216E2C5000A4F86F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				063A5F0A216E2C6700A4F86F /* UIImage+GIF.m in Sources */,
 				063A5E9B216A21B400A4F86F /* LayoutConstraint.swift in Sources */,
@@ -919,17 +961,21 @@
 				063A5F19216E2DB500A4F86F /* YYViewController.m in Sources */,
 				063A5E80216A151F00A4F86F /* YYVistorView.swift in Sources */,
 				063A5F0C216E2C6700A4F86F /* SDWebImageCompat.m in Sources */,
+				06136BC0218E82D100AB2873 /* FMDatabase.m in Sources */,
 				063A5F0D216E2C6700A4F86F /* SDWebImagePrefetcher.m in Sources */,
 				063A5EC8216E2C5000A4F86F /* AFNetworkActivityIndicatorManager.m in Sources */,
 				063A5E97216A21B400A4F86F /* ConstraintRelation.swift in Sources */,
 				063A5ED1216E2C5000A4F86F /* AFURLSessionManager.m in Sources */,
 				063A5F07216E2C6700A4F86F /* SDWebImageDecoder.m in Sources */,
+				06136BBF218E82D100AB2873 /* FMDatabaseAdditions.m in Sources */,
 				06136BA8218D8F6900AB2873 /* YYSqliteManager.m in Sources */,
+				06136BBE218E82D100AB2873 /* FMDatabaseQueue.m in Sources */,
 				063A5E90216A21B400A4F86F /* ViewController+SnapKit.swift in Sources */,
 				063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */,
 				063A5ED4216E2C5000A4F86F /* AFSecurityPolicy.m in Sources */,
 				063A5E94216A21B400A4F86F /* SnapKit.swift in Sources */,
 				063A5EDF216E2C6000A4F86F /* SVIndefiniteAnimatedView.m in Sources */,
+				06136BC2218E82D100AB2873 /* FMResultSet.m in Sources */,
 				063A5F0E216E2C6700A4F86F /* SDImageCache.m in Sources */,
 				063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */,
 				063A5F12216E2C6700A4F86F /* UIView+WebCacheOperation.m in Sources */,

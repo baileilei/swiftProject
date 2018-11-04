@@ -13,6 +13,7 @@
 
 import UIKit
 import QorumLogs
+import FMDB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
