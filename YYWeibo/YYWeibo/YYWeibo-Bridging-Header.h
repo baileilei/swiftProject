@@ -11,5 +11,6 @@
 
 #import "YYSqliteManager.h"
 #import "FMDB.h"
+#import "YYSqliteManageWIthFMDB.h"
 
 #endif /* YYWeibo_Bridging_Header_h */

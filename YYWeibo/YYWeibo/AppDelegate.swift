@@ -39,7 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             YYLog(message: "打开成功")
         }
         
-        SqliteManagerWithFMDB.shareInstance.openDB(dbName: "stuFMDB.sqlite")
+//        SqliteManagerWithFMDB.shareInstance.openDB(dbName: "stuFMDB.sqlite")
+        YYSqliteManageWIthFMDB.shareInstance().open()
         
        QorumLogs.enabled = false
 //        QorumLogs.minimumLogLevelShown = 3//设置打印级别

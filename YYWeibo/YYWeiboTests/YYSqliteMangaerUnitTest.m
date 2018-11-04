@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import "YYStudent.h"
+#import "YYSqliteManageWIthFMDB.h"
+#import "FMDB.h"
 
 
 @interface YYSqliteMangaerUnitTest : XCTestCase
@@ -36,6 +38,16 @@
     [stu insertStudent];
     
     
+}
+
+-(void)testInsertDB{
+    NSString *insertSQL = @"INSERT INTO t_student (name,age) VALUES (?,?);";
+    FMDatabaseQueue *dbQueue = [YYSqliteManageWIthFMDB shareInstance].queue;
+    [dbQueue inDatabase:^(FMDatabase *db) {
+        if ( [db executeUpdate:insertSQL withVAList:(__bridge struct __va_list_tag *)(@[@"why",@18])]) {
+            NSLog(@"插入数据成功");
+        };
+    }];
 }
 
 -(void)testQUeryExample{

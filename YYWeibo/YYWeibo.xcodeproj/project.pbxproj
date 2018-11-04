@@ -29,6 +29,7 @@
 		06136BC4218E84FE00AB2873 /* SqliteManagerWithFMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC3218E84FE00AB2873 /* SqliteManagerWithFMDB.swift */; };
 		06136BC8218E965000AB2873 /* FMDBSqliteUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */; };
 		06136BCA218E979D00AB2873 /* YYStuSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC9218E979D00AB2873 /* YYStuSwift.swift */; };
+		06136BCD218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BCC218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m */; };
 		063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2D2166E81B00A4F86F /* AppDelegate.swift */; };
 		063A5E302166E81B00A4F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2F2166E81B00A4F86F /* ViewController.swift */; };
 		063A5E332166E81B00A4F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E312166E81B00A4F86F /* Main.storyboard */; };
@@ -163,6 +164,8 @@
 		06136BC3218E84FE00AB2873 /* SqliteManagerWithFMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteManagerWithFMDB.swift; sourceTree = "<group>"; };
 		06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDBSqliteUnitTest.swift; sourceTree = "<group>"; };
 		06136BC9218E979D00AB2873 /* YYStuSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStuSwift.swift; sourceTree = "<group>"; };
+		06136BCB218EC4C300AB2873 /* YYSqliteManageWIthFMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSqliteManageWIthFMDB.h; sourceTree = "<group>"; };
+		06136BCC218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSqliteManageWIthFMDB.m; sourceTree = "<group>"; };
 		063A5E2A2166E81B00A4F86F /* YYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A5E2D2166E81B00A4F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063A5E2F2166E81B00A4F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -531,6 +534,8 @@
 				063F7B0A2180C2420067A91B /* YYTitleButton.swift */,
 				06136BA6218D8F6900AB2873 /* YYSqliteManager.h */,
 				06136BA7218D8F6900AB2873 /* YYSqliteManager.m */,
+				06136BCB218EC4C300AB2873 /* YYSqliteManageWIthFMDB.h */,
+				06136BCC218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m */,
 				06136BB0218DED2F00AB2873 /* YYSqliteManagerSwift.swift */,
 				06136BC3218E84FE00AB2873 /* SqliteManagerWithFMDB.swift */,
 			);
@@ -1001,6 +1006,7 @@
 				FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */,
 				063F7B0B2180C2420067A91B /* YYTitleButton.swift in Sources */,
 				06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */,
+				06136BCD218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m in Sources */,
 				063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */,
 				063A5E6A2166E9CA00A4F86F /* YYHomeViewController.swift in Sources */,
 				063A5E7221698D0400A4F86F /* YYTabBar.swift in Sources */,
