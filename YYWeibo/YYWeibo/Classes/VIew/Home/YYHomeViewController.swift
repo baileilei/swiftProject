@@ -28,6 +28,8 @@ class YYHomeViewController: YYVistorTableViewController {
     
     @objc func swipe() {
         YYLog(message: "")
+        let nav = UINavigationController(rootViewController: YYVistorTableViewController())
+        present(nav, animated: false, completion: nil)
     }
 
 

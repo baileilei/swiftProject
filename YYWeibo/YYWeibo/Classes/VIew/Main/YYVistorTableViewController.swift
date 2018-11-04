@@ -10,7 +10,8 @@ import UIKit
 
 class YYVistorTableViewController: UITableViewController {
 
-    var isLogin : Bool = YYUserAccountVM.shareUserAccountVM.isLogin
+//    var isLogin : Bool = YYUserAccountVM.shareUserAccountVM.isLogin
+    var isLogin : Bool = true
     
     var vistorView :YYVistorView?
     
@@ -27,6 +28,7 @@ class YYVistorTableViewController: UITableViewController {
 //            view = vistorView;
 //            setupnavUI()
 //        }
+        isLogin = true
         
         isLogin ? super.loadView() : setupVistorView()
     }
@@ -36,12 +38,16 @@ class YYVistorTableViewController: UITableViewController {
         vistorView?.loginClosure = {[weak self] in
             self?.requestLoginOperation()
         }
-        view = vistorView;
+        
+//        view = vistorView;
+        view = YYVistorView.shareVistorView();
         setupnavUI()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        vistorView = YYVistorView.shareVistorView()
+        view.addSubview(vistorView!)
     }
     
     private func setupnavUI(){

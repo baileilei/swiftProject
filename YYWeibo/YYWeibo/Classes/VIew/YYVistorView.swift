@@ -56,6 +56,11 @@ class YYVistorView: UIView {
         return button
     }()
     
+    
+    class func shareVistorView() -> YYVistorView? {
+        return Bundle.main.loadNibNamed("YYVistorView", owner: nil, options: [:])?.last as? YYVistorView
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
