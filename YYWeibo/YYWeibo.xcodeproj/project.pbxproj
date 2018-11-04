@@ -12,6 +12,23 @@
 		06136B962182189400AB2873 /* discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B952182189400AB2873 /* discover.storyboard */; };
 		06136B98218218A600AB2873 /* message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B97218218A600AB2873 /* message.storyboard */; };
 		06136B9A218218B700AB2873 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B99218218B700AB2873 /* profile.storyboard */; };
+		06136B9C2184016C00AB2873 /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136B9B2184016C00AB2873 /* Popover.storyboard */; };
+		06136B9E2184048A00AB2873 /* YYPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136B9D2184048A00AB2873 /* YYPresentationController.swift */; };
+		06136BA02184361F00AB2873 /* popViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136B9F2184361F00AB2873 /* popViewController.swift */; };
+		06136BA32184A83C00AB2873 /* QRcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06136BA22184A83C00AB2873 /* QRcode.storyboard */; };
+		06136BA52184AE6C00AB2873 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BA42184AE6C00AB2873 /* QRCodeViewController.swift */; };
+		06136BA8218D8F6900AB2873 /* YYSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BA7218D8F6900AB2873 /* YYSqliteManager.m */; };
+		06136BAC218DE58000AB2873 /* YYSqliteMangaerUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BAB218DE58000AB2873 /* YYSqliteMangaerUnitTest.m */; };
+		06136BAF218DE88300AB2873 /* YYStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BAE218DE88300AB2873 /* YYStudent.m */; };
+		06136BB1218DED2F00AB2873 /* YYSqliteManagerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BB0218DED2F00AB2873 /* YYSqliteManagerSwift.swift */; };
+		06136BBE218E82D100AB2873 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BB4218E82D100AB2873 /* FMDatabaseQueue.m */; };
+		06136BBF218E82D100AB2873 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BB7218E82D100AB2873 /* FMDatabaseAdditions.m */; };
+		06136BC0218E82D100AB2873 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BB8218E82D100AB2873 /* FMDatabase.m */; };
+		06136BC1218E82D100AB2873 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BBC218E82D100AB2873 /* FMDatabasePool.m */; };
+		06136BC2218E82D100AB2873 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BBD218E82D100AB2873 /* FMResultSet.m */; };
+		06136BC4218E84FE00AB2873 /* SqliteManagerWithFMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC3218E84FE00AB2873 /* SqliteManagerWithFMDB.swift */; };
+		06136BC8218E965000AB2873 /* FMDBSqliteUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */; };
+		06136BCA218E979D00AB2873 /* YYStuSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC9218E979D00AB2873 /* YYStuSwift.swift */; };
 		063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2D2166E81B00A4F86F /* AppDelegate.swift */; };
 		063A5E302166E81B00A4F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2F2166E81B00A4F86F /* ViewController.swift */; };
 		063A5E332166E81B00A4F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E312166E81B00A4F86F /* Main.storyboard */; };
@@ -119,6 +136,33 @@
 		06136B952182189400AB2873 /* discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = discover.storyboard; sourceTree = "<group>"; };
 		06136B97218218A600AB2873 /* message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = message.storyboard; sourceTree = "<group>"; };
 		06136B99218218B700AB2873 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
+		06136B9B2184016C00AB2873 /* Popover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
+		06136B9D2184048A00AB2873 /* YYPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYPresentationController.swift; sourceTree = "<group>"; };
+		06136B9F2184361F00AB2873 /* popViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popViewController.swift; sourceTree = "<group>"; };
+		06136BA22184A83C00AB2873 /* QRcode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRcode.storyboard; sourceTree = "<group>"; };
+		06136BA42184AE6C00AB2873 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		06136BA6218D8F6900AB2873 /* YYSqliteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSqliteManager.h; sourceTree = "<group>"; };
+		06136BA7218D8F6900AB2873 /* YYSqliteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSqliteManager.m; sourceTree = "<group>"; };
+		06136BA9218DDB4700AB2873 /* YYWeibo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYWeibo-Bridging-Header.h"; sourceTree = "<group>"; };
+		06136BAA218DE57F00AB2873 /* YYWeiboTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYWeiboTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		06136BAB218DE58000AB2873 /* YYSqliteMangaerUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSqliteMangaerUnitTest.m; sourceTree = "<group>"; };
+		06136BAD218DE88300AB2873 /* YYStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYStudent.h; sourceTree = "<group>"; };
+		06136BAE218DE88300AB2873 /* YYStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYStudent.m; sourceTree = "<group>"; };
+		06136BB0218DED2F00AB2873 /* YYSqliteManagerSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSqliteManagerSwift.swift; sourceTree = "<group>"; };
+		06136BB3218E82D100AB2873 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		06136BB4218E82D100AB2873 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		06136BB5218E82D100AB2873 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		06136BB6218E82D100AB2873 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		06136BB7218E82D100AB2873 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		06136BB8218E82D100AB2873 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		06136BB9218E82D100AB2873 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		06136BBA218E82D100AB2873 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		06136BBB218E82D100AB2873 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		06136BBC218E82D100AB2873 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		06136BBD218E82D100AB2873 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		06136BC3218E84FE00AB2873 /* SqliteManagerWithFMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteManagerWithFMDB.swift; sourceTree = "<group>"; };
+		06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDBSqliteUnitTest.swift; sourceTree = "<group>"; };
+		06136BC9218E979D00AB2873 /* YYStuSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStuSwift.swift; sourceTree = "<group>"; };
 		063A5E2A2166E81B00A4F86F /* YYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A5E2D2166E81B00A4F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063A5E2F2166E81B00A4F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +322,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06136BA12184A81B00AB2873 /* QRcode */ = {
+			isa = PBXGroup;
+			children = (
+				06136BA22184A83C00AB2873 /* QRcode.storyboard */,
+				06136BA42184AE6C00AB2873 /* QRCodeViewController.swift */,
+			);
+			path = QRcode;
+			sourceTree = "<group>";
+		};
+		06136BB2218E82D100AB2873 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				06136BB3218E82D100AB2873 /* FMDatabase.h */,
+				06136BB4218E82D100AB2873 /* FMDatabaseQueue.m */,
+				06136BB5218E82D100AB2873 /* FMResultSet.h */,
+				06136BB6218E82D100AB2873 /* FMDatabasePool.h */,
+				06136BB7218E82D100AB2873 /* FMDatabaseAdditions.m */,
+				06136BB8218E82D100AB2873 /* FMDatabase.m */,
+				06136BB9218E82D100AB2873 /* FMDatabaseQueue.h */,
+				06136BBA218E82D100AB2873 /* FMDB.h */,
+				06136BBB218E82D100AB2873 /* FMDatabaseAdditions.h */,
+				06136BBC218E82D100AB2873 /* FMDatabasePool.m */,
+				06136BBD218E82D100AB2873 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		063A5E212166E81B00A4F86F = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +389,7 @@
 				063A5E342166E81C00A4F86F /* Assets.xcassets */,
 				063A5E362166E81C00A4F86F /* LaunchScreen.storyboard */,
 				063A5E392166E81C00A4F86F /* Info.plist */,
+				06136BA9218DDB4700AB2873 /* YYWeibo-Bridging-Header.h */,
 			);
 			path = YYWeibo;
 			sourceTree = "<group>";
@@ -326,7 +398,10 @@
 			isa = PBXGroup;
 			children = (
 				063A5E422166E81C00A4F86F /* YYWeiboTests.swift */,
+				06136BAB218DE58000AB2873 /* YYSqliteMangaerUnitTest.m */,
+				06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */,
 				063A5E442166E81C00A4F86F /* Info.plist */,
+				06136BAA218DE57F00AB2873 /* YYWeiboTests-Bridging-Header.h */,
 			);
 			path = YYWeiboTests;
 			sourceTree = "<group>";
@@ -373,6 +448,9 @@
 			isa = PBXGroup;
 			children = (
 				06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */,
+				06136BAD218DE88300AB2873 /* YYStudent.h */,
+				06136BAE218DE88300AB2873 /* YYStudent.m */,
+				06136BC9218E979D00AB2873 /* YYStuSwift.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -380,6 +458,7 @@
 		063A5E612166E97D00A4F86F /* VIew */ = {
 			isa = PBXGroup;
 			children = (
+				06136BA12184A81B00AB2873 /* QRcode */,
 				FD2753C5216C870F00C160D0 /* OAuth */,
 				063A5E622166E97D00A4F86F /* Home */,
 				063A5E632166E97D00A4F86F /* Discover */,
@@ -397,6 +476,9 @@
 			isa = PBXGroup;
 			children = (
 				063A5E692166E9CA00A4F86F /* YYHomeViewController.swift */,
+				06136B9D2184048A00AB2873 /* YYPresentationController.swift */,
+				06136B9B2184016C00AB2873 /* Popover.storyboard */,
+				06136B9F2184361F00AB2873 /* popViewController.swift */,
 				06136B932182188300AB2873 /* home.storyboard */,
 			);
 			path = Home;
@@ -447,6 +529,10 @@
 				063A5E742169964A00A4F86F /* UIView+Extension.swift */,
 				063A5E762169CE1F00A4F86F /* UIBarButtonItem+Extension.swift */,
 				063F7B0A2180C2420067A91B /* YYTitleButton.swift */,
+				06136BA6218D8F6900AB2873 /* YYSqliteManager.h */,
+				06136BA7218D8F6900AB2873 /* YYSqliteManager.m */,
+				06136BB0218DED2F00AB2873 /* YYSqliteManagerSwift.swift */,
+				06136BC3218E84FE00AB2873 /* SqliteManagerWithFMDB.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -463,6 +549,7 @@
 		063A5E81216A21AB00A4F86F /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				06136BB2218E82D100AB2873 /* fmdb */,
 				063A5EE3216E2C6700A4F86F /* SDWebImage */,
 				063A5ED5216E2C5F00A4F86F /* SVProgressHUD */,
 				063A5E9E216E2C4F00A4F86F /* AFNetworking */,
@@ -717,6 +804,7 @@
 					};
 					063A5E3D2166E81C00A4F86F = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = 063A5E292166E81B00A4F86F;
 					};
 					063A5E482166E81C00A4F86F = {
@@ -750,7 +838,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06136B9C2184016C00AB2873 /* Popover.storyboard in Resources */,
 				06136B9A218218B700AB2873 /* profile.storyboard in Resources */,
+				06136BA32184A83C00AB2873 /* QRcode.storyboard in Resources */,
 				FD0BA059217EFFF100229645 /* Main.json in Resources */,
 				06136B922182170E00AB2873 /* NULL.storyboard in Resources */,
 				06136B98218218A600AB2873 /* message.storyboard in Resources */,
@@ -817,12 +907,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YYWeibo/Pods-YYWeibo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/QorumLogs/QorumLogs.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QorumLogs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
@@ -839,16 +931,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				063A5EC9216E2C5000A4F86F /* UIImageView+AFNetworking.m in Sources */,
+				06136BB1218DED2F00AB2873 /* YYSqliteManagerSwift.swift in Sources */,
 				063A5ED0216E2C5000A4F86F /* AFHTTPSessionManager.m in Sources */,
 				063A5EC6216E2C5000A4F86F /* UIProgressView+AFNetworking.m in Sources */,
 				063A5EC7216E2C5000A4F86F /* UIRefreshControl+AFNetworking.m in Sources */,
+				06136BC1218E82D100AB2873 /* FMDatabasePool.m in Sources */,
 				063A5ECB216E2C5000A4F86F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				063A5F0A216E2C6700A4F86F /* UIImage+GIF.m in Sources */,
 				063A5E9B216A21B400A4F86F /* LayoutConstraint.swift in Sources */,
 				063A5ECD216E2C5000A4F86F /* AFAutoPurgingImageCache.m in Sources */,
 				063A5ED2216E2C5000A4F86F /* AFURLRequestSerialization.m in Sources */,
 				063A5E302166E81B00A4F86F /* ViewController.swift in Sources */,
+				06136BA02184361F00AB2873 /* popViewController.swift in Sources */,
 				063A5F10216E2C6700A4F86F /* NSData+ImageContentType.m in Sources */,
+				06136B9E2184048A00AB2873 /* YYPresentationController.swift in Sources */,
 				063A5E99216A21B400A4F86F /* Constraint.swift in Sources */,
 				063A5ECF216E2C5000A4F86F /* AFURLResponseSerialization.m in Sources */,
 				063A5EDE216E2C6000A4F86F /* SVProgressHUD.m in Sources */,
@@ -859,7 +955,9 @@
 				063A5E93216A21B400A4F86F /* ConstraintAttributes.swift in Sources */,
 				063A5F11216E2C6700A4F86F /* UIImageView+WebCache.m in Sources */,
 				063A5F08216E2C6700A4F86F /* UIImageView+HighlightedWebCache.m in Sources */,
+				06136BAF218DE88300AB2873 /* YYStudent.m in Sources */,
 				063A5ECE216E2C5000A4F86F /* AFImageDownloader.m in Sources */,
+				06136BA52184AE6C00AB2873 /* QRCodeViewController.swift in Sources */,
 				063A5ECC216E2C5000A4F86F /* UIWebView+AFNetworking.m in Sources */,
 				063A5E682166E9A900A4F86F /* YYTabBarViewController.swift in Sources */,
 				063A5E772169CE1F00A4F86F /* UIBarButtonItem+Extension.swift in Sources */,
@@ -872,20 +970,27 @@
 				063A5F19216E2DB500A4F86F /* YYViewController.m in Sources */,
 				063A5E80216A151F00A4F86F /* YYVistorView.swift in Sources */,
 				063A5F0C216E2C6700A4F86F /* SDWebImageCompat.m in Sources */,
+				06136BC0218E82D100AB2873 /* FMDatabase.m in Sources */,
 				063A5F0D216E2C6700A4F86F /* SDWebImagePrefetcher.m in Sources */,
+				06136BCA218E979D00AB2873 /* YYStuSwift.swift in Sources */,
 				063A5EC8216E2C5000A4F86F /* AFNetworkActivityIndicatorManager.m in Sources */,
 				063A5E97216A21B400A4F86F /* ConstraintRelation.swift in Sources */,
 				063A5ED1216E2C5000A4F86F /* AFURLSessionManager.m in Sources */,
 				063A5F07216E2C6700A4F86F /* SDWebImageDecoder.m in Sources */,
+				06136BBF218E82D100AB2873 /* FMDatabaseAdditions.m in Sources */,
+				06136BA8218D8F6900AB2873 /* YYSqliteManager.m in Sources */,
+				06136BBE218E82D100AB2873 /* FMDatabaseQueue.m in Sources */,
 				063A5E90216A21B400A4F86F /* ViewController+SnapKit.swift in Sources */,
 				063A5E6C2166E9D800A4F86F /* YYDiscoverViewController.swift in Sources */,
 				063A5ED4216E2C5000A4F86F /* AFSecurityPolicy.m in Sources */,
 				063A5E94216A21B400A4F86F /* SnapKit.swift in Sources */,
 				063A5EDF216E2C6000A4F86F /* SVIndefiniteAnimatedView.m in Sources */,
+				06136BC2218E82D100AB2873 /* FMResultSet.m in Sources */,
 				063A5F0E216E2C6700A4F86F /* SDImageCache.m in Sources */,
 				063A5E7A2169CFC600A4F86F /* YYSearchView.swift in Sources */,
 				063A5F12216E2C6700A4F86F /* UIView+WebCacheOperation.m in Sources */,
 				063A5E9D216CDD3500A4F86F /* YYNetworkTools.swift in Sources */,
+				06136BC4218E84FE00AB2873 /* SqliteManagerWithFMDB.swift in Sources */,
 				063A5F0F216E2C6700A4F86F /* SDWebImageDownloaderOperation.m in Sources */,
 				063A5E98216A21B400A4F86F /* ConstraintItem.swift in Sources */,
 				063A5F16216E2D9700A4F86F /* forBridgeFIle.m in Sources */,
@@ -908,7 +1013,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06136BC8218E965000AB2873 /* FMDBSqliteUnitTest.swift in Sources */,
 				063A5E432166E81C00A4F86F /* YYWeiboTests.swift in Sources */,
+				06136BAC218DE58000AB2873 /* YYSqliteMangaerUnitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1083,7 +1190,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KA54YR925;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = YYWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1095,8 +1205,10 @@
 					"-all_load",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D MYDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = yy.YYWeibo;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.yy.YYWeibo.aaaa.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "YYWeibo/YYWeibo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1108,7 +1220,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KA54YR925;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = YYWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1119,8 +1234,10 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yy.YYWeibo;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.yy.YYWeibo.aaaa.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "YYWeibo/YYWeibo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1131,6 +1248,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YYWeiboTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1140,6 +1258,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yy.YYWeiboTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YYWeiboTests/YYWeiboTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YYWeibo.app/YYWeibo";
@@ -1151,6 +1271,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YYWeiboTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1160,6 +1281,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yy.YYWeiboTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YYWeiboTests/YYWeiboTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YYWeibo.app/YYWeibo";

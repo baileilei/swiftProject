@@ -13,6 +13,7 @@
 
 import UIKit
 import QorumLogs
+import FMDB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,6 +34,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = YYTabBarViewController()
 //
 //        window?.makeKeyAndVisible()
+       let flag = YYSqliteManager.shareInstance().openDB()
+        if (flag){
+            YYLog(message: "打开成功")
+        }
+        
+        SqliteManagerWithFMDB.shareInstance.openDB(dbName: "stuFMDB.sqlite")
+        
        QorumLogs.enabled = false
 //        QorumLogs.minimumLogLevelShown = 3//设置打印级别
 //        QorumLogs.onlyShowThisFile("ViewController")//设置只打印某个文件的log

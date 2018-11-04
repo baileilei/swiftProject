@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "YYWeibo-Swift.h"
 @interface YYViewController : UIViewController
 
 @end

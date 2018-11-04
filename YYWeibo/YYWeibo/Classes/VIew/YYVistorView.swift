@@ -10,6 +10,12 @@ import UIKit
 
 class YYVistorView: UIView {
     
+    class func getYYVisitorView()->YYVistorView{
+    
+        return Bundle.main.loadNibNamed("YYVistorView", owner: nil, options: nil)?.last as! YYVistorView
+    
+    }
+    
     var loginClosure: (()->())?
     
     
@@ -56,6 +62,7 @@ class YYVistorView: UIView {
         return button
     }()
     
+
     
     class func shareVistorView() -> YYVistorView? {
         return Bundle.main.loadNibNamed("YYVistorView", owner: nil, options: [:])?.last as? YYVistorView
@@ -70,6 +77,7 @@ class YYVistorView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     
     private func setupUI(){
         backgroundColor = UIColor(white: 237/255, alpha: 1)
@@ -136,7 +144,14 @@ class YYVistorView: UIView {
         cycleImageView.layer.add(animation, forKey: nil)//图层上的动画
         
     }
+//    @IBOutlet weak var loginAction: UIButton!
+//    @IBAction func loginAction(_ sender: Any) {
+//    }
     
+    @IBAction func logicClickAction(_ sender: Any) {
+        YYLog(message: "it is difference")
+    }
+    @IBOutlet weak var loginbtnClick: UIButton!
     @objc func loginAction(){
         loginClosure?()
     }

@@ -13,6 +13,8 @@ class YYVistorTableViewController: UITableViewController {
 //    var isLogin : Bool = YYUserAccountVM.shareUserAccountVM.isLogin
     var isLogin : Bool = true
     
+//    var isLogin : Bool = false
+    
     var vistorView :YYVistorView?
     
     
@@ -35,12 +37,15 @@ class YYVistorTableViewController: UITableViewController {
     
     func setupVistorView() {
         vistorView = YYVistorView()
+//        vistorView = YYVistorView.getYYVisitorView()
         vistorView?.loginClosure = {[weak self] in
             self?.requestLoginOperation()
         }
-        
-//        view = vistorView;
+
         view = YYVistorView.shareVistorView();
+
+//        view = vistorView;
+        
         setupnavUI()
     }
     
@@ -48,6 +53,18 @@ class YYVistorTableViewController: UITableViewController {
         super.viewDidLoad()
         vistorView = YYVistorView.shareVistorView()
         view.addSubview(vistorView!)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        vistorView?.snp_makeConstraints(closure: { (make) in
+//            make.edges.equalTo(view).offset(UIEdgeInsets.zero)
+            make.top.equalTo(view)
+            make.bottom.equalTo(view)
+            make.left.equalTo(view)
+            make.right.equalTo(view)
+        })
     }
     
     private func setupnavUI(){

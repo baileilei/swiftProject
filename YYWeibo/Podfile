@@ -9,4 +9,5 @@ target 'YYWeibo' do
     pod 'SVProgressHUD', '1.1.3'
     pod 'AFNetworking'
     pod 'QorumLogs'
+    pod 'FMDB'
 end

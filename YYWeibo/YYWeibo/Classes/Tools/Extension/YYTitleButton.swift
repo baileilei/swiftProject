@@ -13,15 +13,24 @@ class YYTitleButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        setupUI()
         //设置按钮的图片
-        setImage(UIImage(named: ""), for: .normal)
-        setImage(UIImage(named: ""), for: .selected)
-        setBackgroundImage(UIImage(named: ""), for: .normal)
-        setBackgroundImage(UIImage(named: ""), for: .selected)
+//        setImage(UIImage(named: ""), for: .normal)
+//        setImage(UIImage(named: ""), for: .selected)
+//        setBackgroundImage(UIImage(named: ""), for: .normal)
+//        setBackgroundImage(UIImage(named: ""), for: .selected)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+        setupUI()
+    }
+    
+    private func setupUI(){
+        setImage(UIImage(named: "navigationbar_arrow_down"), for: .normal)
+        setImage(UIImage(named: "navigationbar_arrow_up"), for: .selected)
+        setTitleColor(UIColor.darkGray, for: .normal)
+        sizeToFit()
     }
     
     //关于空格在自定义类中的处理
