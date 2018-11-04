@@ -27,6 +27,8 @@
 		06136BC1218E82D100AB2873 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BBC218E82D100AB2873 /* FMDatabasePool.m */; };
 		06136BC2218E82D100AB2873 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BBD218E82D100AB2873 /* FMResultSet.m */; };
 		06136BC4218E84FE00AB2873 /* SqliteManagerWithFMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC3218E84FE00AB2873 /* SqliteManagerWithFMDB.swift */; };
+		06136BC8218E965000AB2873 /* FMDBSqliteUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */; };
+		06136BCA218E979D00AB2873 /* YYStuSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC9218E979D00AB2873 /* YYStuSwift.swift */; };
 		063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2D2166E81B00A4F86F /* AppDelegate.swift */; };
 		063A5E302166E81B00A4F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2F2166E81B00A4F86F /* ViewController.swift */; };
 		063A5E332166E81B00A4F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E312166E81B00A4F86F /* Main.storyboard */; };
@@ -159,6 +161,8 @@
 		06136BBC218E82D100AB2873 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		06136BBD218E82D100AB2873 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		06136BC3218E84FE00AB2873 /* SqliteManagerWithFMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteManagerWithFMDB.swift; sourceTree = "<group>"; };
+		06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDBSqliteUnitTest.swift; sourceTree = "<group>"; };
+		06136BC9218E979D00AB2873 /* YYStuSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStuSwift.swift; sourceTree = "<group>"; };
 		063A5E2A2166E81B00A4F86F /* YYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A5E2D2166E81B00A4F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063A5E2F2166E81B00A4F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -395,6 +399,7 @@
 			children = (
 				063A5E422166E81C00A4F86F /* YYWeiboTests.swift */,
 				06136BAB218DE58000AB2873 /* YYSqliteMangaerUnitTest.m */,
+				06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */,
 				063A5E442166E81C00A4F86F /* Info.plist */,
 				06136BAA218DE57F00AB2873 /* YYWeiboTests-Bridging-Header.h */,
 			);
@@ -445,6 +450,7 @@
 				06AB4FE2216E38B700C7B631 /* YYUserAccount.swift */,
 				06136BAD218DE88300AB2873 /* YYStudent.h */,
 				06136BAE218DE88300AB2873 /* YYStudent.m */,
+				06136BC9218E979D00AB2873 /* YYStuSwift.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -966,6 +972,7 @@
 				063A5F0C216E2C6700A4F86F /* SDWebImageCompat.m in Sources */,
 				06136BC0218E82D100AB2873 /* FMDatabase.m in Sources */,
 				063A5F0D216E2C6700A4F86F /* SDWebImagePrefetcher.m in Sources */,
+				06136BCA218E979D00AB2873 /* YYStuSwift.swift in Sources */,
 				063A5EC8216E2C5000A4F86F /* AFNetworkActivityIndicatorManager.m in Sources */,
 				063A5E97216A21B400A4F86F /* ConstraintRelation.swift in Sources */,
 				063A5ED1216E2C5000A4F86F /* AFURLSessionManager.m in Sources */,
@@ -1006,6 +1013,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06136BC8218E965000AB2873 /* FMDBSqliteUnitTest.swift in Sources */,
 				063A5E432166E81C00A4F86F /* YYWeiboTests.swift in Sources */,
 				06136BAC218DE58000AB2873 /* YYSqliteMangaerUnitTest.m in Sources */,
 			);

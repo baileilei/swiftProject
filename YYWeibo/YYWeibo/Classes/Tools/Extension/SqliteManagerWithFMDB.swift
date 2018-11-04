@@ -9,6 +9,7 @@
 import UIKit
 
 class SqliteManagerWithFMDB: NSObject {
+    
     static let shareInstance : SqliteManagerWithFMDB = SqliteManagerWithFMDB()
     
     var dbQueue :FMDatabaseQueue?//内自动有一个db
