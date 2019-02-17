@@ -51,8 +51,8 @@ class YYVistorTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        vistorView = YYVistorView.shareVistorView()
-        view.addSubview(vistorView!)
+//        vistorView = YYVistorView.shareVistorView()
+//        view.addSubview(vistorView!)
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -30,6 +30,8 @@
 		06136BC8218E965000AB2873 /* FMDBSqliteUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC7218E965000AB2873 /* FMDBSqliteUnitTest.swift */; };
 		06136BCA218E979D00AB2873 /* YYStuSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06136BC9218E979D00AB2873 /* YYStuSwift.swift */; };
 		06136BCD218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 06136BCC218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m */; };
+		06136BD021A454A500AB2873 /* Student.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06136BCE21A454A500AB2873 /* Student.xcdatamodeld */; };
+		06136BD221A4553200AB2873 /* StuModel.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06136BD121A4553200AB2873 /* StuModel.xcmappingmodel */; };
 		063A5E2E2166E81B00A4F86F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2D2166E81B00A4F86F /* AppDelegate.swift */; };
 		063A5E302166E81B00A4F86F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5E2F2166E81B00A4F86F /* ViewController.swift */; };
 		063A5E332166E81B00A4F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A5E312166E81B00A4F86F /* Main.storyboard */; };
@@ -166,6 +168,8 @@
 		06136BC9218E979D00AB2873 /* YYStuSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYStuSwift.swift; sourceTree = "<group>"; };
 		06136BCB218EC4C300AB2873 /* YYSqliteManageWIthFMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSqliteManageWIthFMDB.h; sourceTree = "<group>"; };
 		06136BCC218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSqliteManageWIthFMDB.m; sourceTree = "<group>"; };
+		06136BCF21A454A500AB2873 /* Student.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Student.xcdatamodel; sourceTree = "<group>"; };
+		06136BD121A4553200AB2873 /* StuModel.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = StuModel.xcmappingmodel; sourceTree = "<group>"; };
 		063A5E2A2166E81B00A4F86F /* YYWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063A5E2D2166E81B00A4F86F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063A5E2F2166E81B00A4F86F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -522,6 +526,8 @@
 				063A5E672166E9A900A4F86F /* YYTabBarViewController.swift */,
 				063F7B07217E28270067A91B /* Main.json */,
 				063A5E7D216A10DA00A4F86F /* YYVistorTableViewController.swift */,
+				06136BCE21A454A500AB2873 /* Student.xcdatamodeld */,
+				06136BD121A4553200AB2873 /* StuModel.xcmappingmodel */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -977,6 +983,7 @@
 				063A5F0C216E2C6700A4F86F /* SDWebImageCompat.m in Sources */,
 				06136BC0218E82D100AB2873 /* FMDatabase.m in Sources */,
 				063A5F0D216E2C6700A4F86F /* SDWebImagePrefetcher.m in Sources */,
+				06136BD221A4553200AB2873 /* StuModel.xcmappingmodel in Sources */,
 				06136BCA218E979D00AB2873 /* YYStuSwift.swift in Sources */,
 				063A5EC8216E2C5000A4F86F /* AFNetworkActivityIndicatorManager.m in Sources */,
 				063A5E97216A21B400A4F86F /* ConstraintRelation.swift in Sources */,
@@ -1006,6 +1013,7 @@
 				FD2753C7216C874700C160D0 /* YYOauthViewController.swift in Sources */,
 				063F7B0B2180C2420067A91B /* YYTitleButton.swift in Sources */,
 				06AB4FE3216E38B700C7B631 /* YYUserAccount.swift in Sources */,
+				06136BD021A454A500AB2873 /* Student.xcdatamodeld in Sources */,
 				06136BCD218EC4C300AB2873 /* YYSqliteManageWIthFMDB.m in Sources */,
 				063A5E6E2166E9E300A4F86F /* YYMessageViewController.swift in Sources */,
 				063A5E6A2166E9CA00A4F86F /* YYHomeViewController.swift in Sources */,
@@ -1372,6 +1380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		06136BCE21A454A500AB2873 /* Student.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				06136BCF21A454A500AB2873 /* Student.xcdatamodel */,
+			);
+			currentVersion = 06136BCF21A454A500AB2873 /* Student.xcdatamodel */;
+			path = Student.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 063A5E222166E81B00A4F86F /* Project object */;
 }
