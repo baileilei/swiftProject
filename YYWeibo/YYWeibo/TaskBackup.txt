@@ -38,4 +38,6 @@ TODO:
 
 15.用swift改写OC版的FMDB。
 
+16.sqlite 这部分，crateTime可以当做一个升级，当做一个数据库强制更新的需求来完成。
+
 
