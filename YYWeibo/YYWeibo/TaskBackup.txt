@@ -40,4 +40,12 @@ TODO:
 
 16.sqlite 这部分，crateTime可以当做一个升级，当做一个数据库强制更新的需求来完成。
 
+16.sqlite缓存书记，表设计的这部分内容，字段createTime添加的这个字段可以当做是version升级的一个好的练习case。
+
+17.定位二维码、生成二维码？？？    CAShapeLayer      coreners    8个值！4个点。
+                                                bounds-------四个值。 x,y, w,h.
+18.指定扫描区域。   out.rectofInterest.
+19.CIDetector    QRCode
+
+
 
