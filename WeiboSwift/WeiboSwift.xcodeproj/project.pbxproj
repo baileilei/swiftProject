@@ -14,6 +14,22 @@
 		065590AD216661B00048FBD5 /* WeiboSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065590AC216661B00048FBD5 /* WeiboSwiftTests.swift */; };
 		065590B8216661B00048FBD5 /* WeiboSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065590B7216661B00048FBD5 /* WeiboSwiftUITests.swift */; };
 		065590CA21666F0A0048FBD5 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 065590C921666F090048FBD5 /* Classes */; };
+		FD88C635221E4A4D008CABF5 /* tns2.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C619221E4A4C008CABF5 /* tns2.m */; };
+		FD88C636221E4A4D008CABF5 /* ServerWSServiceSvc.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C61C221E4A4C008CABF5 /* ServerWSServiceSvc.m */; };
+		FD88C637221E4A4D008CABF5 /* IPosServiceServiceSvc.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C61E221E4A4C008CABF5 /* IPosServiceServiceSvc.m */; };
+		FD88C638221E4A4D008CABF5 /* xsd.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C61F221E4A4C008CABF5 /* xsd.m */; };
+		FD88C639221E4A4D008CABF5 /* NSDate+ISO8601Unparsing.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C620221E4A4C008CABF5 /* NSDate+ISO8601Unparsing.m */; };
+		FD88C63A221E4A4D008CABF5 /* ServerWSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C621221E4A4C008CABF5 /* ServerWSManager.m */; };
+		FD88C63B221E4A4D008CABF5 /* tns4.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C624221E4A4C008CABF5 /* tns4.m */; };
+		FD88C63C221E4A4D008CABF5 /* USGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C626221E4A4C008CABF5 /* USGlobals.m */; };
+		FD88C63D221E4A4D008CABF5 /* xs.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C628221E4A4C008CABF5 /* xs.m */; };
+		FD88C63E221E4A4D008CABF5 /* NSDate+ISO8601Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C62A221E4A4C008CABF5 /* NSDate+ISO8601Parsing.m */; };
+		FD88C63F221E4A4D008CABF5 /* tns3.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C62B221E4A4C008CABF5 /* tns3.m */; };
+		FD88C640221E4A4D008CABF5 /* USAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88C62F221E4A4C008CABF5 /* USAdditions.m */; };
+		FD88C641221E4A4D008CABF5 /* getCRMDocument_Response_Full in Resources */ = {isa = PBXBuildFile; fileRef = FD88C631221E4A4C008CABF5 /* getCRMDocument_Response_Full */; };
+		FD88C642221E4A4D008CABF5 /* getCRMDocument_Response in Resources */ = {isa = PBXBuildFile; fileRef = FD88C632221E4A4C008CABF5 /* getCRMDocument_Response */; };
+		FD88C643221E4A4D008CABF5 /* getCRMDocument_Response_Single in Resources */ = {isa = PBXBuildFile; fileRef = FD88C633221E4A4C008CABF5 /* getCRMDocument_Response_Single */; };
+		FD88C644221E4A4D008CABF5 /* CRMGetRequestList_Response in Resources */ = {isa = PBXBuildFile; fileRef = FD88C634221E4A4C008CABF5 /* CRMGetRequestList_Response */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +63,34 @@
 		065590B7216661B00048FBD5 /* WeiboSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboSwiftUITests.swift; sourceTree = "<group>"; };
 		065590B9216661B00048FBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		065590C921666F090048FBD5 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
+		FD88C618221E4A4C008CABF5 /* USGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USGlobals.h; sourceTree = "<group>"; };
+		FD88C619221E4A4C008CABF5 /* tns2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tns2.m; sourceTree = "<group>"; };
+		FD88C61A221E4A4C008CABF5 /* tns4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tns4.h; sourceTree = "<group>"; };
+		FD88C61B221E4A4C008CABF5 /* NSDate+ISO8601Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ISO8601Parsing.h"; sourceTree = "<group>"; };
+		FD88C61C221E4A4C008CABF5 /* ServerWSServiceSvc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerWSServiceSvc.m; sourceTree = "<group>"; };
+		FD88C61D221E4A4C008CABF5 /* xs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xs.h; sourceTree = "<group>"; };
+		FD88C61E221E4A4C008CABF5 /* IPosServiceServiceSvc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPosServiceServiceSvc.m; sourceTree = "<group>"; };
+		FD88C61F221E4A4C008CABF5 /* xsd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xsd.m; sourceTree = "<group>"; };
+		FD88C620221E4A4C008CABF5 /* NSDate+ISO8601Unparsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ISO8601Unparsing.m"; sourceTree = "<group>"; };
+		FD88C621221E4A4C008CABF5 /* ServerWSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerWSManager.m; sourceTree = "<group>"; };
+		FD88C622221E4A4C008CABF5 /* tns3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tns3.h; sourceTree = "<group>"; };
+		FD88C623221E4A4C008CABF5 /* USAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USAdditions.h; sourceTree = "<group>"; };
+		FD88C624221E4A4C008CABF5 /* tns4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tns4.m; sourceTree = "<group>"; };
+		FD88C625221E4A4C008CABF5 /* tns2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tns2.h; sourceTree = "<group>"; };
+		FD88C626221E4A4C008CABF5 /* USGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USGlobals.m; sourceTree = "<group>"; };
+		FD88C627221E4A4C008CABF5 /* IPosServiceServiceSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPosServiceServiceSvc.h; sourceTree = "<group>"; };
+		FD88C628221E4A4C008CABF5 /* xs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xs.m; sourceTree = "<group>"; };
+		FD88C629221E4A4C008CABF5 /* ServerWSServiceSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerWSServiceSvc.h; sourceTree = "<group>"; };
+		FD88C62A221E4A4C008CABF5 /* NSDate+ISO8601Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ISO8601Parsing.m"; sourceTree = "<group>"; };
+		FD88C62B221E4A4C008CABF5 /* tns3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tns3.m; sourceTree = "<group>"; };
+		FD88C62C221E4A4C008CABF5 /* ServerWSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerWSManager.h; sourceTree = "<group>"; };
+		FD88C62D221E4A4C008CABF5 /* NSDate+ISO8601Unparsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ISO8601Unparsing.h"; sourceTree = "<group>"; };
+		FD88C62E221E4A4C008CABF5 /* xsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xsd.h; sourceTree = "<group>"; };
+		FD88C62F221E4A4C008CABF5 /* USAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USAdditions.m; sourceTree = "<group>"; };
+		FD88C631221E4A4C008CABF5 /* getCRMDocument_Response_Full */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getCRMDocument_Response_Full; sourceTree = "<group>"; };
+		FD88C632221E4A4C008CABF5 /* getCRMDocument_Response */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getCRMDocument_Response; sourceTree = "<group>"; };
+		FD88C633221E4A4C008CABF5 /* getCRMDocument_Response_Single */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getCRMDocument_Response_Single; sourceTree = "<group>"; };
+		FD88C634221E4A4C008CABF5 /* CRMGetRequestList_Response */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CRMGetRequestList_Response; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +141,8 @@
 		06559096216661AD0048FBD5 /* WeiboSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FD88C630221E4A4C008CABF5 /* WebServiceRespones */,
+				FD88C617221E4A4C008CABF5 /* Webservices */,
 				065590C921666F090048FBD5 /* Classes */,
 				06559097216661AE0048FBD5 /* AppDelegate.swift */,
 				06559099216661AE0048FBD5 /* ViewController.swift */,
@@ -123,6 +169,48 @@
 				065590B9216661B00048FBD5 /* Info.plist */,
 			);
 			path = WeiboSwiftUITests;
+			sourceTree = "<group>";
+		};
+		FD88C617221E4A4C008CABF5 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				FD88C618221E4A4C008CABF5 /* USGlobals.h */,
+				FD88C619221E4A4C008CABF5 /* tns2.m */,
+				FD88C61A221E4A4C008CABF5 /* tns4.h */,
+				FD88C61B221E4A4C008CABF5 /* NSDate+ISO8601Parsing.h */,
+				FD88C61C221E4A4C008CABF5 /* ServerWSServiceSvc.m */,
+				FD88C61D221E4A4C008CABF5 /* xs.h */,
+				FD88C61E221E4A4C008CABF5 /* IPosServiceServiceSvc.m */,
+				FD88C61F221E4A4C008CABF5 /* xsd.m */,
+				FD88C620221E4A4C008CABF5 /* NSDate+ISO8601Unparsing.m */,
+				FD88C621221E4A4C008CABF5 /* ServerWSManager.m */,
+				FD88C622221E4A4C008CABF5 /* tns3.h */,
+				FD88C623221E4A4C008CABF5 /* USAdditions.h */,
+				FD88C624221E4A4C008CABF5 /* tns4.m */,
+				FD88C625221E4A4C008CABF5 /* tns2.h */,
+				FD88C626221E4A4C008CABF5 /* USGlobals.m */,
+				FD88C627221E4A4C008CABF5 /* IPosServiceServiceSvc.h */,
+				FD88C628221E4A4C008CABF5 /* xs.m */,
+				FD88C629221E4A4C008CABF5 /* ServerWSServiceSvc.h */,
+				FD88C62A221E4A4C008CABF5 /* NSDate+ISO8601Parsing.m */,
+				FD88C62B221E4A4C008CABF5 /* tns3.m */,
+				FD88C62C221E4A4C008CABF5 /* ServerWSManager.h */,
+				FD88C62D221E4A4C008CABF5 /* NSDate+ISO8601Unparsing.h */,
+				FD88C62E221E4A4C008CABF5 /* xsd.h */,
+				FD88C62F221E4A4C008CABF5 /* USAdditions.m */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		FD88C630221E4A4C008CABF5 /* WebServiceRespones */ = {
+			isa = PBXGroup;
+			children = (
+				FD88C631221E4A4C008CABF5 /* getCRMDocument_Response_Full */,
+				FD88C632221E4A4C008CABF5 /* getCRMDocument_Response */,
+				FD88C633221E4A4C008CABF5 /* getCRMDocument_Response_Single */,
+				FD88C634221E4A4C008CABF5 /* CRMGetRequestList_Response */,
+			);
+			path = WebServiceRespones;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				065590CA21666F0A0048FBD5 /* Classes in Resources */,
+				FD88C642221E4A4D008CABF5 /* getCRMDocument_Response in Resources */,
+				FD88C643221E4A4D008CABF5 /* getCRMDocument_Response_Single in Resources */,
+				FD88C641221E4A4D008CABF5 /* getCRMDocument_Response_Full in Resources */,
+				FD88C644221E4A4D008CABF5 /* CRMGetRequestList_Response in Resources */,
 				0655909F216661B00048FBD5 /* Assets.xcassets in Resources */,
 				0655909D216661AE0048FBD5 /* Main.storyboard in Resources */,
 			);
@@ -257,8 +349,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD88C63F221E4A4D008CABF5 /* tns3.m in Sources */,
+				FD88C63B221E4A4D008CABF5 /* tns4.m in Sources */,
+				FD88C63A221E4A4D008CABF5 /* ServerWSManager.m in Sources */,
+				FD88C63C221E4A4D008CABF5 /* USGlobals.m in Sources */,
+				FD88C639221E4A4D008CABF5 /* NSDate+ISO8601Unparsing.m in Sources */,
+				FD88C63D221E4A4D008CABF5 /* xs.m in Sources */,
 				0655909A216661AE0048FBD5 /* ViewController.swift in Sources */,
+				FD88C63E221E4A4D008CABF5 /* NSDate+ISO8601Parsing.m in Sources */,
+				FD88C637221E4A4D008CABF5 /* IPosServiceServiceSvc.m in Sources */,
+				FD88C636221E4A4D008CABF5 /* ServerWSServiceSvc.m in Sources */,
+				FD88C638221E4A4D008CABF5 /* xsd.m in Sources */,
 				06559098216661AE0048FBD5 /* AppDelegate.swift in Sources */,
+				FD88C635221E4A4D008CABF5 /* tns2.m in Sources */,
+				FD88C640221E4A4D008CABF5 /* USAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
